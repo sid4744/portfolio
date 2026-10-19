@@ -68,5 +68,15 @@
 
 <noscript><p style="padding:2rem;font:16px monospace">This portfolio needs JavaScript. Project list is in data/projects.json.</p></noscript>
 <script type="module" src="js/main.js"></script>
+<script>
+  // If the page script never starts (very old browser: no import maps), say so instead of showing an empty page.
+  setTimeout(function () {
+    if (window.__portfolio) return;
+    var d = document.createElement('div'); d.id = 'oldbrowser';
+    d.style.cssText = 'position:fixed;left:12px;right:12px;bottom:12px;z-index:200;background:#fcee0a;color:#050505;padding:14px;font:700 14px/1.4 monospace';
+    d.innerHTML = 'This page could not start. It needs a recent browser (Safari 16.4+ / Chrome / Firefox). Please update your browser or open it in Chrome or Safari, not inside another app.';
+    document.body.appendChild(d);
+  }, 9000);
+</script>
 </body>
 </html>

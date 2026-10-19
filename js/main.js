@@ -49,11 +49,11 @@ function hasWebGL() {
 }
 const params = new URLSearchParams(location.search);
 const weak = (navigator.deviceMemory && navigator.deviceMemory <= 2) || (navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 2);
-const canSphere = hasWebGL() && !params.has('lite') && !weak;
+const canSphere = hasWebGL() && !params.has('lite');
 // Phones and tablets: touch controls, and "light" mode, where models are shown as their thumbnail discs
 // (a few KB each) instead of streaming ~60 MB of 3D files; the real model still loads on the project page.
 const coarse = matchMedia('(pointer: coarse)').matches;
-const LITE = !params.has('full') && (params.has('light') || (coarse && Math.min(innerWidth, innerHeight) < 900));
+const LITE = !params.has('full') && (params.has('light') || weak || (coarse && Math.min(innerWidth, innerHeight) < 900));
 if (coarse) document.body.classList.add('touch');
 let mode = 'index';
 
@@ -621,16 +621,25 @@ window.addEventListener('popstate', () => {
   if (m && byId.has(m[1])) openProject(byId.get(m[1]), { push: false }); else if (currentIdx >= 0) closeProject({ push: false });
 });
 
+let sphereNote = '';
 if (canSphere) {
-  sphere = startSphere();
-  if (coarse) $('#hints').textContent = 'DRAG TO LOOK · PINCH TO ZOOM · TAP TO OPEN';
-  setMode('sphere');
+  try {
+    sphere = startSphere();
+    if (coarse) $('#hints').textContent = 'DRAG TO LOOK · PINCH TO ZOOM · TAP TO OPEN';
+    setMode('sphere');
+  } catch (e) {
+    console.error('Sphere failed to start', e); sphere = null; sphereNote = `The 3D view could not start on this device (${String(e.message || e).slice(0, 90)}). Showing the list instead.`;
+    document.body.classList.remove('booting'); $('#legend').hidden = true; document.querySelector('.mode[data-mode="sphere"]').hidden = true; setMode('index');
+  }
 } else {
+  sphereNote = hasWebGL() ? '' : 'This browser has no WebGL, so the 3D view is off. Showing the list instead.';
   document.body.classList.remove('booting');
   $('#legend').hidden = true;
   document.querySelector('.mode[data-mode="sphere"]').hidden = true;
   setMode('index');
 }
+if (sphereNote) $('.index-head').append(el('p', { class: 'fallback-note' }, sphereNote));
+
 const first = location.hash.match(/^#\/p\/(.+)$/);
 if (first && byId.has(first[1])) openProject(byId.get(first[1]), { push: false });
 window.__portfolio = { get sphere() { return sphere; }, projects, openProject };

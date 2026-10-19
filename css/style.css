@@ -194,3 +194,5 @@ body.touch button { touch-action: manipulation; }
 }
 .step.ink, .step { background-color: var(--paper); background-image: none; color: var(--ink); outline: 2px solid var(--ink); }
 .step:hover { background-color: var(--yellow); }
+
+.fallback-note { flex-basis: 100%; margin: 0; padding: 8px 12px; background: var(--yellow); color: var(--ink); font-weight: 700; font-size: 12px; }
