@@ -1,0 +1,2078 @@
+[
+  {
+    "id": "1-0-drivetrain4v",
+    "title": "Drivetrain 1.0 (4V)",
+    "category": "Vehicles",
+    "year": "",
+    "status": "model",
+    "summary": "Fusion 360 design. Description to be added.",
+    "description": [],
+    "tech": [
+      "Fusion 360"
+    ],
+    "type": "model",
+    "model": "models/1-0-drivetrain4v.glb",
+    "up": "y",
+    "cover": "",
+    "images": [],
+    "links": [],
+    "draft": true
+  },
+  {
+    "id": "air-scoop-left-and-right",
+    "title": "Air Scoops, Left & Right",
+    "category": "Vehicles",
+    "year": "",
+    "status": "model",
+    "summary": "Fusion 360 design. Description to be added.",
+    "description": [],
+    "tech": [
+      "Fusion 360"
+    ],
+    "type": "model",
+    "model": "models/air-scoop-left-and-right.glb",
+    "up": "y",
+    "cover": "",
+    "images": [],
+    "links": [],
+    "draft": true
+  },
+  {
+    "id": "rear-difuser-audi-tt-mk1",
+    "title": "Rear Diffuser, Audi TT Mk1",
+    "category": "Vehicles",
+    "year": "",
+    "status": "model",
+    "summary": "Fusion 360 design. Description to be added.",
+    "description": [],
+    "tech": [
+      "Fusion 360"
+    ],
+    "type": "model",
+    "model": "models/rear-difuser-audi-tt-mk1.glb",
+    "up": "y",
+    "cover": "",
+    "images": [],
+    "links": [],
+    "draft": true,
+    "pose": [
+      0.051759,
+      -0.187233,
+      -0.056444,
+      0.979326
+    ]
+  },
+  {
+    "id": "peristalticpump-nemaxx-parametric-v85",
+    "title": "Peristaltic Pump (NEMA, parametric)",
+    "category": "Mechanical",
+    "year": "",
+    "status": "model",
+    "summary": "Fusion 360 design. Description to be added.",
+    "description": [],
+    "tech": [
+      "Fusion 360"
+    ],
+    "type": "model",
+    "model": "models/peristalticpump-nemaxx-parametric-v85.glb",
+    "up": "y",
+    "cover": "",
+    "images": [],
+    "links": [],
+    "draft": true
+  },
+  {
+    "id": "paramteric-scotch-v2",
+    "title": "Parametric Scotch Yoke v2",
+    "category": "Mechanical",
+    "year": "",
+    "status": "model",
+    "summary": "Fusion 360 design. Description to be added.",
+    "description": [],
+    "tech": [
+      "Fusion 360"
+    ],
+    "type": "model",
+    "model": "models/paramteric-scotch-v2.glb",
+    "up": "y",
+    "cover": "",
+    "images": [],
+    "links": [],
+    "draft": true,
+    "hidden": [
+      2
+    ],
+    "pose": [
+      0.490545,
+      -0.420126,
+      -0.420204,
+      -0.637408
+    ]
+  },
+  {
+    "id": "tameboyv2",
+    "title": "Tameboy",
+    "category": "Product",
+    "year": "",
+    "status": "model",
+    "summary": "A smartphone gameboy, dubbed the Tameboy.",
+    "description": [],
+    "tech": [
+      "Fusion 360"
+    ],
+    "type": "model",
+    "model": "models/tameboyv2.glb",
+    "up": "y",
+    "cover": "",
+    "images": [
+      "media/tameboyv2/img-01.jpg",
+      "media/tameboyv2/img-02.jpg",
+      "media/tameboyv2/img-03.jpg",
+      "media/tameboyv2/img-04.jpg",
+      "media/tameboyv2/img-05.jpg"
+    ],
+    "links": [],
+    "draft": true,
+    "blocks": [
+      {
+        "t": "imgs",
+        "after": -1,
+        "srcs": [
+          "media/tameboyv2/img-01.jpg",
+          "media/tameboyv2/img-02.jpg",
+          "media/tameboyv2/img-03.jpg",
+          "media/tameboyv2/img-04.jpg",
+          "media/tameboyv2/img-05.jpg"
+        ]
+      }
+    ],
+    "pose": [
+      0.09191,
+      0.468641,
+      -0.013864,
+      0.878485
+    ]
+  },
+  {
+    "id": "organizer",
+    "title": "Organizer",
+    "category": "Product",
+    "year": "",
+    "status": "model",
+    "summary": "Fusion 360 design. Description to be added.",
+    "description": [],
+    "tech": [
+      "Fusion 360"
+    ],
+    "type": "model",
+    "model": "models/organizer.glb",
+    "up": "y",
+    "cover": "",
+    "images": [],
+    "links": [],
+    "draft": true,
+    "pose": [
+      0,
+      0,
+      -0.707107,
+      -0.707107
+    ]
+  },
+  {
+    "id": "bloblamp",
+    "title": "Blob Lamp",
+    "category": "Product",
+    "year": "",
+    "status": "model",
+    "summary": "Fusion 360 design. Description to be added.",
+    "description": [],
+    "tech": [
+      "Fusion 360"
+    ],
+    "type": "model",
+    "model": "models/bloblamp.glb",
+    "up": "y",
+    "cover": "",
+    "images": [],
+    "links": [],
+    "draft": true,
+    "pose": [
+      0.707107,
+      0,
+      0,
+      0.707107
+    ]
+  },
+  {
+    "id": "theperfectbuckle-v25",
+    "title": "The Perfect Buckle v25",
+    "category": "Product",
+    "year": "",
+    "status": "model",
+    "summary": "Fusion 360 design. Description to be added.",
+    "description": [],
+    "tech": [
+      "Fusion 360"
+    ],
+    "type": "model",
+    "model": "models/theperfectbuckle-v25.glb",
+    "up": "y",
+    "cover": "",
+    "images": [],
+    "links": [],
+    "draft": true
+  },
+  {
+    "id": "phonecasev21",
+    "title": "Phone Case v21",
+    "category": "Product",
+    "year": "",
+    "status": "model",
+    "summary": "Fusion 360 design. Description to be added.",
+    "description": [],
+    "tech": [
+      "Fusion 360"
+    ],
+    "type": "model",
+    "model": "models/phonecasev21.glb",
+    "up": "y",
+    "cover": "",
+    "images": [],
+    "links": [],
+    "draft": true,
+    "pose": [
+      -0.163201,
+      -0.963374,
+      -0.212242,
+      -0.015167
+    ]
+  },
+  {
+    "id": "reamus-keder-cutting-tool",
+    "title": "Keder Cutting Tool",
+    "category": "Tools",
+    "year": "",
+    "status": "model",
+    "summary": "Fusion 360 design. Description to be added.",
+    "description": [],
+    "tech": [
+      "Fusion 360"
+    ],
+    "type": "model",
+    "model": "models/reamus-keder-cutting-tool.glb",
+    "up": "y",
+    "cover": "",
+    "images": [],
+    "links": [],
+    "draft": true,
+    "pose": [
+      0.707107,
+      0,
+      0,
+      0.707107
+    ]
+  },
+  {
+    "id": "toolv2",
+    "title": "Tool V2",
+    "category": "Tools",
+    "year": "",
+    "status": "model",
+    "summary": "Fusion 360 design. Description to be added.",
+    "description": [],
+    "tech": [
+      "Fusion 360"
+    ],
+    "type": "model",
+    "model": "models/toolv2.glb",
+    "up": "y",
+    "cover": "",
+    "images": [],
+    "links": [],
+    "draft": true,
+    "pose": [
+      0.707107,
+      0,
+      0,
+      -0.707107
+    ]
+  },
+  {
+    "id": "qtents-parametric-workflows",
+    "title": "Digital Fabrication Pipeline",
+    "category": "Tensile Structures",
+    "year": "2023–2025",
+    "status": "shipped",
+    "summary": "From membrane simulation to cutting pattern, floor plan and cost estimate, fully parametric.",
+    "description": [
+      "The membrane geometry comes out of the Kangaroo simulation and is fed into another Grasshopper script that uses OpenNest. It automatically converts the geometry into a cutting pattern of fabric strips, optimised for roll width, with seam allowances added, panels labelled and a floor build plan generated that is easy to follow on the shop floor.",
+      "The same script produces a cost estimate for the sales team, with a full BOM and all the costs involved in a custom project. All of it is automated and parametric.",
+      "## Complex projects, simple code",
+      "Early on my scripts were rough, because I was still working out which components were needed and which controls were essential. Over time they became cleaner, and I distilled complex logic into tight, lightweight components: dense clusters of functionality packaged as simple drag-and-drop modules that can be reused again and again."
+    ],
+    "tech": [
+      "Grasshopper",
+      "Kangaroo",
+      "OpenNest",
+      "Parametric design"
+    ],
+    "type": "image",
+    "model": "",
+    "up": "y",
+    "cover": "media/qtents-parametric-workflows/cover.jpg",
+    "images": [
+      "media/qtents-parametric-workflows/img-01.jpg",
+      "media/qtents-parametric-workflows/img-02.jpg",
+      "media/qtents-parametric-workflows/img-03.jpg",
+      "media/qtents-parametric-workflows/img-04.jpg",
+      "media/qtents-parametric-workflows/img-05.jpg",
+      "media/qtents-parametric-workflows/img-06.jpg",
+      "media/qtents-parametric-workflows/img-07.jpg"
+    ],
+    "links": [],
+    "blocks": [
+      {
+        "t": "imgs",
+        "after": 1,
+        "srcs": [
+          "media/qtents-parametric-workflows/img-01.jpg",
+          "media/qtents-parametric-workflows/img-02.jpg",
+          "media/qtents-parametric-workflows/img-03.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 3,
+        "srcs": [
+          "media/qtents-parametric-workflows/img-04.jpg",
+          "media/qtents-parametric-workflows/img-05.jpg",
+          "media/qtents-parametric-workflows/img-06.jpg",
+          "media/qtents-parametric-workflows/img-07.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "qtents-scan-to-quote",
+    "title": "Qtents 3D Tool: Scan to Cutting Pattern",
+    "category": "Tensile Structures",
+    "year": "2023–2025",
+    "status": "shipped",
+    "summary": "Drop in a 3D scan of a site, draw a tent outline and get a draft cutting pattern with quantities and waste.",
+    "description": [
+      "A replacement for the old laser-scan workflow, which needed an engineer on site, multiple visits and a lot of time. The tool takes a 3D scan of the site: you draw the custom tent outline, set pole positions and heights, and it generates a draft cutting pattern with material quantities and waste factored in. That gives the sales team a solid cost basis before design even starts.",
+      "Export a DXF and it instantly populates a Grasshopper file with the exact specs, ready to run."
+    ],
+    "tech": [
+      "3D web app",
+      "3D scanning",
+      "DXF",
+      "Grasshopper"
+    ],
+    "type": "image",
+    "model": "",
+    "up": "y",
+    "cover": "media/qtents-scan-to-quote/cover.jpg",
+    "images": [
+      "media/qtents-scan-to-quote/img-01.jpg",
+      "media/qtents-scan-to-quote/img-02.jpg",
+      "media/qtents-scan-to-quote/img-03.jpg",
+      "media/qtents-scan-to-quote/img-04.jpg"
+    ],
+    "links": [],
+    "blocks": [
+      {
+        "t": "imgs",
+        "after": 1,
+        "srcs": [
+          "media/qtents-scan-to-quote/img-01.jpg",
+          "media/qtents-scan-to-quote/img-02.jpg",
+          "media/qtents-scan-to-quote/img-03.jpg",
+          "media/qtents-scan-to-quote/img-04.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "qtents-tensile-frames",
+    "title": "Tensile Structure & Metal Frame Design",
+    "category": "Tensile Structures",
+    "year": "2023–2025",
+    "status": "shipped",
+    "summary": "FEA/FEM simulation and design of tensile structures and the metal frames that hold them.",
+    "description": [
+      "## Tensile structures",
+      "Tensile structures are flexible, lightweight structures that can be varied widely within a working set of parameters: material properties, anchor points, poles and membrane shape are the main controls. Rhino with the Grasshopper and Kangaroo plugins were the right tools, and let me build a workflow in which a designer can virtually design these structures in high detail with endless customisability.",
+      "## Metal frames",
+      "Tensile architecture usually combines metal structures and hard elements with membranes and flexible elements, which all have to work together. I learned to model, design and optimise those frames using IQ Cube and Karamba, directly and parametrically connected to Rhino and Grasshopper. That made it easy to iterate quickly and optimise for strength, weight and cost: beam and bracing patterns, materials and profile options could be tested to find the best solution for each use case."
+    ],
+    "tech": [
+      "Rhino",
+      "Grasshopper",
+      "Kangaroo",
+      "Karamba",
+      "FEA / FEM"
+    ],
+    "type": "image",
+    "model": "",
+    "up": "y",
+    "cover": "media/qtents-tensile-frames/cover-1792435186494.jpg",
+    "images": [
+      "media/qtents-tensile-frames/img-01.jpg",
+      "media/qtents-tensile-frames/img-02.jpg",
+      "media/qtents-tensile-frames/img-03.jpg",
+      "media/qtents-tensile-frames/img-04.jpg",
+      "media/qtents-tensile-frames/img-05.jpg",
+      "media/qtents-tensile-frames/img-06.jpg",
+      "media/qtents-tensile-frames/img-07.jpg",
+      "media/qtents-tensile-frames/img-08.jpg",
+      "media/qtents-tensile-frames/img-09.jpg",
+      "media/qtents-tensile-frames/img-10.jpg",
+      "media/qtents-tensile-frames/img-11.jpg",
+      "media/qtents-tensile-frames/img-12.jpg",
+      "media/qtents-tensile-frames/img-13.jpg",
+      "media/qtents-tensile-frames/img-14.jpg",
+      "media/qtents-tensile-frames/img-15.jpg",
+      "media/qtents-tensile-frames/img-16.jpg"
+    ],
+    "links": [],
+    "blocks": [
+      {
+        "t": "imgs",
+        "after": -1,
+        "srcs": [
+          "media/qtents-tensile-frames/img-01.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 1,
+        "srcs": [
+          "media/qtents-tensile-frames/img-02.jpg",
+          "media/qtents-tensile-frames/img-03.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 3,
+        "srcs": [
+          "media/qtents-tensile-frames/img-04.jpg",
+          "media/qtents-tensile-frames/img-05.jpg",
+          "media/qtents-tensile-frames/img-06.jpg",
+          "media/qtents-tensile-frames/img-07.jpg",
+          "media/qtents-tensile-frames/img-08.jpg",
+          "media/qtents-tensile-frames/img-09.jpg",
+          "media/qtents-tensile-frames/img-10.jpg",
+          "media/qtents-tensile-frames/img-11.jpg",
+          "media/qtents-tensile-frames/img-12.jpg",
+          "media/qtents-tensile-frames/img-13.jpg",
+          "media/qtents-tensile-frames/img-14.jpg",
+          "media/qtents-tensile-frames/img-15.jpg",
+          "media/qtents-tensile-frames/img-16.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "qtents-production-tools",
+    "title": "Tools for the Production Team",
+    "category": "Tensile Structures",
+    "year": "2023–2025",
+    "status": "shipped",
+    "summary": "Custom measuring jigs, templates and strip-cutting devices for the shop floor.",
+    "description": [
+      "Beyond the software, I developed physical production tools: custom measuring jigs, templates, strip-cutting devices and more, all aimed at making repetitive tasks on the shop floor faster, cleaner and more consistent."
+    ],
+    "tech": [
+      "3D printing",
+      "CAD",
+      "Jig design"
+    ],
+    "type": "image",
+    "model": "",
+    "up": "y",
+    "cover": "media/qtents-production-tools/cover-1792435212552.jpg",
+    "images": [
+      "media/qtents-production-tools/img-01.jpg",
+      "media/qtents-production-tools/img-02.jpg",
+      "media/qtents-production-tools/img-03.jpg",
+      "media/qtents-production-tools/img-04.jpg",
+      "media/qtents-production-tools/img-05.jpg",
+      "media/qtents-production-tools/img-06.jpg",
+      "media/qtents-production-tools/img-07.jpg",
+      "media/qtents-production-tools/img-08.jpg"
+    ],
+    "links": [],
+    "blocks": [
+      {
+        "t": "imgs",
+        "after": 0,
+        "srcs": [
+          "media/qtents-production-tools/img-01.jpg",
+          "media/qtents-production-tools/img-02.jpg",
+          "media/qtents-production-tools/img-03.jpg",
+          "media/qtents-production-tools/img-04.jpg",
+          "media/qtents-production-tools/img-05.jpg",
+          "media/qtents-production-tools/img-06.jpg",
+          "media/qtents-production-tools/img-07.jpg",
+          "media/qtents-production-tools/img-08.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "qtents-3d-scanning",
+    "title": "3D Scanning with iPhones",
+    "category": "Tensile Structures",
+    "year": "2023–2025",
+    "status": "shipped",
+    "summary": "iPhone scans instead of expensive laser mapping, giving more detail and letting the company take on more complex projects.",
+    "description": [
+      "Since most of our design phase now happened in Rhino and Grasshopper, it made sense to develop the pipeline in both directions, on the production side and on the proposal and sales side, to link the customer and the production floor better.",
+      "That began with 3D scanning sites using iPhones rather than the far more expensive and complex Leica laser mapper. It gave a much more detailed overview of even highly specific environments, including natural boundaries, water and trees, and let us take on significantly more complex projects."
+    ],
+    "tech": [
+      "3D scanning",
+      "Point cloud",
+      "Workflow design"
+    ],
+    "type": "image",
+    "model": "",
+    "up": "y",
+    "cover": "media/qtents-3d-scanning/cover.jpg",
+    "images": [
+      "media/qtents-3d-scanning/img-01.jpg",
+      "media/qtents-3d-scanning/img-02.jpg",
+      "media/qtents-3d-scanning/img-03.jpg",
+      "media/qtents-3d-scanning/img-04.jpg",
+      "media/qtents-3d-scanning/img-05.jpg",
+      "media/qtents-3d-scanning/img-06.jpg",
+      "media/qtents-3d-scanning/img-07.jpg",
+      "media/qtents-3d-scanning/img-08.jpg",
+      "media/qtents-3d-scanning/img-09.jpg",
+      "media/qtents-3d-scanning/img-10.jpg",
+      "media/qtents-3d-scanning/img-11.jpg",
+      "media/qtents-3d-scanning/img-12.jpg"
+    ],
+    "links": [],
+    "blocks": [
+      {
+        "t": "imgs",
+        "after": 0,
+        "srcs": [
+          "media/qtents-3d-scanning/img-01.jpg",
+          "media/qtents-3d-scanning/img-02.jpg",
+          "media/qtents-3d-scanning/img-03.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 1,
+        "srcs": [
+          "media/qtents-3d-scanning/img-04.jpg",
+          "media/qtents-3d-scanning/img-05.jpg",
+          "media/qtents-3d-scanning/img-06.jpg",
+          "media/qtents-3d-scanning/img-07.jpg",
+          "media/qtents-3d-scanning/img-08.jpg",
+          "media/qtents-3d-scanning/img-09.jpg",
+          "media/qtents-3d-scanning/img-10.jpg",
+          "media/qtents-3d-scanning/img-11.jpg",
+          "media/qtents-3d-scanning/img-12.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "resonance",
+    "title": "Resonance",
+    "category": "Vibecoded projects",
+    "year": "",
+    "status": "built",
+    "summary": "A desktop music player for the music you already own, with generated mixes, a tempo/energy \"Tune\" view, visualisers and a DJ mode. Screenshots use a fictional demo library.",
+    "description": [
+      "## A player for the music you already own",
+      "Point it at your folders and it reads tags and cover art. It never moves, renames or modifies your files. Scanning runs in the background with a progress bar, and rescans skip files whose size and modified time have not changed. It reads MP3, FLAC, M4A/AAC/ALAC, OGG, Opus, WAV, WMA and AIFF.",
+      "## Made for you",
+      "The home page greets you, then offers mixes generated from your own library, with nothing external involved: one per substantial artist, one per well-populated decade, and Rediscover, which collects tracks you own but have never played. Each mix is a real page you can inspect, seeded by the date so it holds still while you browse and re-rolls tomorrow.",
+      "## Library",
+      "Songs (sortable), Albums, Artists and Recently played, with search across title, artist, album and genre. Artists are indexed per track, so a compilation lists its performers instead of a \"Various Artists\" bucket, and collaborations tagged \"A; B\" are filed under both artists.",
+      "## Tune",
+      "Resequence your library by ear with three dials and no black box: tempo, energy and brightness, plus a surprise slider that decides how much randomness to mix into the ranking. Play the result, play it next, or add it to the queue.",
+      "## Now Playing, visualisers and DJ",
+      "Click the bottom bar for a focused full-window view: a large cover with its colour bled into the background, big transport controls and what is up next. A toggle brings up visualisers: a segmented spectrum analyser with falling peak caps, an oscilloscope and a mirrored spectrum.",
+      "The DJ view adds two decks with tempo sync, key lock and a crossfade, so one track can be mixed into the next by hand or with Auto mix over a set number of seconds.",
+      "## Everything else",
+      "Cross-fade from 0 to 12 seconds, shuffle and repeat, a live queue you can reorder, user playlists, media keys and the system media overlay on Windows. Queue, position, volume and window size all come back on relaunch, paused and never autoplaying."
+    ],
+    "tech": [
+      "Electron",
+      "JavaScript",
+      "Web Audio"
+    ],
+    "type": "image",
+    "model": "",
+    "up": "y",
+    "cover": "media/resonance/cover.png",
+    "images": [
+      "media/resonance/shot-album.jpg",
+      "media/resonance/shot-home.jpg",
+      "media/resonance/shot-albums.jpg",
+      "media/resonance/shot-artist.jpg",
+      "media/resonance/shot-tune.jpg",
+      "media/resonance/shot-nowplaying.jpg",
+      "media/resonance/shot-visualiser.jpg",
+      "media/resonance/shot-dj.jpg",
+      "media/resonance/shot-queue.jpg"
+    ],
+    "links": [],
+    "blocks": [
+      {
+        "t": "imgs",
+        "after": 1,
+        "srcs": [
+          "media/resonance/shot-album.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 3,
+        "srcs": [
+          "media/resonance/shot-home.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 5,
+        "srcs": [
+          "media/resonance/shot-albums.jpg",
+          "media/resonance/shot-artist.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 7,
+        "srcs": [
+          "media/resonance/shot-tune.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 9,
+        "srcs": [
+          "media/resonance/shot-nowplaying.jpg",
+          "media/resonance/shot-visualiser.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 10,
+        "srcs": [
+          "media/resonance/shot-dj.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 12,
+        "srcs": [
+          "media/resonance/shot-queue.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "resonance-android",
+    "title": "Resonance for Android",
+    "category": "Vibecoded projects",
+    "year": "",
+    "status": "built",
+    "summary": "The Resonance interface on a phone, with the music side done natively. Screenshots use a fictional demo library.",
+    "description": [
+      "## The same player, on a phone",
+      "Resonance for Android runs the desktop interface in a WebView and does natively only what a phone has to: reading the music on the device, and playing it from a foreground service so playback carries on when the screen locks. Playback runs on ExoPlayer, and casting to Chromecast is supported.",
+      "## One interface, two platforms",
+      "The phone app shares the desktop renderer. Only the player and the bridge to the platform are replaced, so Home, mixes, albums, Now Playing and the visualisers behave the same way on both. A Connect mode talks to the desktop app over the network.",
+      "## Building and testing",
+      "A preview harness runs the web half at phone size with the native side faked, so the interface can be driven and the layout checked from a desktop. The checks cover local mode and Connect mode, and a static seam check catches the case where the desktop renderer imports something the Android overrides do not provide, which would otherwise leave the app unable to boot."
+    ],
+    "tech": [
+      "Android",
+      "Capacitor",
+      "ExoPlayer",
+      "WebView"
+    ],
+    "type": "image",
+    "model": "",
+    "up": "y",
+    "cover": "media/resonance-android/cover-b.png",
+    "images": [
+      "media/resonance-android/shot-home.jpg",
+      "media/resonance-android/shot-albums.jpg",
+      "media/resonance-android/shot-playing.jpg",
+      "media/resonance-android/shot-nowplaying.jpg",
+      "media/resonance-android/shot-visualiser.jpg"
+    ],
+    "links": [],
+    "blocks": [
+      {
+        "t": "imgs",
+        "after": 1,
+        "srcs": [
+          "media/resonance-android/shot-home.jpg",
+          "media/resonance-android/shot-albums.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 3,
+        "srcs": [
+          "media/resonance-android/shot-playing.jpg",
+          "media/resonance-android/shot-nowplaying.jpg",
+          "media/resonance-android/shot-visualiser.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "vibewatch",
+    "title": "vibewatch",
+    "category": "Vibecoded projects",
+    "year": "",
+    "status": "built",
+    "summary": "Movie and TV discovery by mood instead of genre, with a local vibe engine, trailers and where-to-watch. Screenshots show the built-in demo catalogue.",
+    "description": [
+      "## Browse by feeling, not by genre",
+      "A poster gallery where titles are grouped by vibe tags such as \"cozy sunday comfort watch\", \"tense slow-burn thriller\" or \"stare-at-the-ceiling afterwards\" instead of genres. The home page picks a rotating \"vibe of the moment\" and lays everything else out as shelves.",
+      "## A vibe engine that runs locally",
+      "Each title is scored against about 50 weighted rules over its synopsis, keywords, genre combinations, era, rating and runtime. Results are cached in a JSON file, so there is no model, no API and nothing to train: a new vibe is added by appending a rule.",
+      "## Detail, trailers and where to watch",
+      "Opening a title shows its vibes, synopsis and cast, a click-to-play trailer through the privacy-friendly youtube-nocookie embed, and a Where to watch section by region. All watch links point to licensed services only.",
+      "## Free by design",
+      "No paid keys, ever. With no key at all the app runs in a demo mode with a bundled catalogue of about 22 titles and stylised placeholder posters, so the whole interface is browsable at once. A free TMDb key unlocks the live catalogue, real posters, cast, trailers and streaming availability."
+    ],
+    "tech": [
+      "React",
+      "Vite",
+      "Express",
+      "TMDb API (optional)"
+    ],
+    "type": "image",
+    "model": "",
+    "up": "y",
+    "cover": "media/vibewatch/cover.png",
+    "images": [
+      "media/vibewatch/shot-home.jpg",
+      "media/vibewatch/shot-vibe.jpg",
+      "media/vibewatch/shot-detail.jpg",
+      "media/vibewatch/shot-detail-watch.jpg"
+    ],
+    "links": [],
+    "blocks": [
+      {
+        "t": "imgs",
+        "after": 1,
+        "srcs": [
+          "media/vibewatch/shot-home.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 3,
+        "srcs": [
+          "media/vibewatch/shot-vibe.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 5,
+        "srcs": [
+          "media/vibewatch/shot-detail.jpg",
+          "media/vibewatch/shot-detail-watch.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tt-mmi",
+    "title": "TT MMI",
+    "category": "Vibecoded projects",
+    "year": "",
+    "status": "built",
+    "summary": "A Spotify display and remote for an old iPhone mounted in an Audi TT Mk1, with the real car spinning as a wireframe. Screenshots use the built-in mock mode.",
+    "description": [
+      "## A Spotify display and remote for the car",
+      "Built for an old iPhone XS mounted in an Audi TT Mk1: landscape, black and Audi red, with the real car spinning as a wireframe. It shows what is playing and sends transport commands. Audio keeps playing from the Spotify app; this reads the player state and controls it, and Spotify Premium is needed for the controls.",
+      "## The wireframe car",
+      "The wireframe is a real Audi TT Mk1 (8N) model reduced offline to its feature edges: 4,500 edges in 49 KB, drawn on a 2D canvas with no three.js and no WebGL. Keeping only creases and open boundaries keeps panel gaps, wheel arches and glass outlines readable, and depth-banded line brightness fakes solidity. Drag to spin it; let go and it drifts back to a slow showroom rotation.",
+      "## Library, queue and an honest visualiser",
+      "Tabs for Now, Library (playlists and recents) and Queue, a device picker and a settings sheet. Spotify does not expose the audio stream to the browser, so the visualiser can run in a synthetic mode that makes no claim to follow the audio, or use the microphone for genuinely reactive bars. The volume slider greys out and says why when the active device does not allow volume changes.",
+      "## No build step",
+      "Static files only: no framework and no CDN. Sign-in uses Spotify's PKCE flow, so no client secret is ever needed, and it installs to the home screen as a full-screen app. A ?mock=1 flag swaps in a fake Spotify backend for working on the interface without a phone or an account."
+    ],
+    "tech": [
+      "Spotify Web API",
+      "PWA",
+      "Canvas",
+      "Vanilla JS"
+    ],
+    "type": "image",
+    "model": "",
+    "up": "y",
+    "cover": "media/tt-mmi/cover-b.png",
+    "images": [
+      "media/tt-mmi/shot-now.jpg",
+      "media/tt-mmi/shot-library.jpg",
+      "media/tt-mmi/shot-queue.jpg",
+      "media/tt-mmi/shot-settings.jpg",
+      "media/tt-mmi/shot-devices.jpg"
+    ],
+    "links": [],
+    "blocks": [
+      {
+        "t": "imgs",
+        "after": 1,
+        "srcs": [
+          "media/tt-mmi/shot-now.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 5,
+        "srcs": [
+          "media/tt-mmi/shot-library.jpg",
+          "media/tt-mmi/shot-queue.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 7,
+        "srcs": [
+          "media/tt-mmi/shot-settings.jpg",
+          "media/tt-mmi/shot-devices.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "projector-map-3d",
+    "title": "Projector Map 3D",
+    "category": "Vibecoded projects",
+    "year": "",
+    "status": "built",
+    "summary": "Corner-pin projection mapping in the browser, plus a surround mode that extends a game around the monitor.",
+    "description": [
+      "## Corner-pin projection mapping in the browser",
+      "Show any tab, window, video, image or camera on a skewed projector and get a straight rectangle on the wall. Drag the four corners onto the corners of the rectangle on your wall, set its real aspect ratio, and the output window applies the homography with WebGL2 so the picture lands square.",
+      "## Picture mode",
+      "Pick a source (Capture shows any Chrome tab or window), choose the projector display, open the output and double-click it for fullscreen. Corners can be dragged on the control page or on the output and nudged with the arrow keys (Shift for 10x). The picture can be fitted, filled or stretched into the quad, and mirrored or flipped. Settings save automatically.",
+      "## Surround mode for sim racing",
+      "The game stays on the monitor. The projector shows a blurred, faded extension of that frame on the wall around it, with a black hole where the monitor is. Set the wall corners first, then drag the monitor hole's corners until it sits exactly over the screen, and tune brightness, blur, reach and hole margin. Mirror continues the edge of the picture; Smear stretches its edge pixels.",
+      "Not included: audio for video files, mesh warp for curved walls, and a true wider field of view, which would need game support."
+    ],
+    "tech": [
+      "WebGL2",
+      "JavaScript",
+      "Node.js"
+    ],
+    "type": "image",
+    "model": "",
+    "up": "y",
+    "cover": "media/projector-map-3d/cover.png",
+    "images": [
+      "media/projector-map-3d/shot-picture.jpg",
+      "media/projector-map-3d/shot-corner-pin.jpg",
+      "media/projector-map-3d/shot-surround.jpg"
+    ],
+    "links": [],
+    "blocks": [
+      {
+        "t": "imgs",
+        "after": 1,
+        "srcs": [
+          "media/projector-map-3d/shot-picture.jpg",
+          "media/projector-map-3d/shot-corner-pin.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 6,
+        "srcs": [
+          "media/projector-map-3d/shot-surround.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pihole-launcher",
+    "title": "Pi-hole Launcher",
+    "category": "Vibecoded projects",
+    "year": "",
+    "status": "built",
+    "summary": "A one-button Windows control panel for running Pi-hole in Docker. Screenshots use simulated data.",
+    "description": [
+      "## A control panel for Pi-hole, no terminal",
+      "A Windows app that runs Pi-hole in Docker behind one big Start button. It is a control layer around Docker: it never bundles or reimplements Pi-hole, it orchestrates the official pihole/pihole container and puts a native-feeling interface on top.",
+      "## First run: prerequisites",
+      "On launch the app checks that Docker Desktop is installed and running, that Linux containers are enabled and that it has administrator rights. If something is missing it shows a guided fix-it screen with a one-click Docker download link and a Relaunch as Administrator button, instead of crashing.",
+      "## Onboarding wizard",
+      "A short wizard explains what is about to happen, then asks for the network adapter Pi-hole should attach to (pre-selected to the active connection, with a warning for wireless adapters) and a static IP on that subnet. The app suggests an address and pings candidates so it does not offer one that is already taken, and it reports port conflicts on the PC.",
+      "## Dashboard and settings",
+      "The dashboard shows the container state with live stats (queries today, percent blocked, top blocked domain, active clients), restart and stop, blocklist updates and a troubleshooting log console. Settings cover the upstream DNS provider, starting with Windows, changing the network, and removing Pi-hole, which asks whether to keep your blocklists.",
+      "## Engineering notes",
+      "Pi-hole runs on a macvlan network with its own LAN address, and two things fail silently in that setup, so the app guards against them. Wi-Fi adapters generally cannot carry macvlan traffic, so wireless adapters trigger a warning and the app pings the gateway from inside the container after every start. Docker Desktop always exposes its uplink as eth0, so the app always passes parent=eth0 and uses your chosen adapter only to detect the subnet and gateway.",
+      "Live stats are fetched with docker exec, which works even though the Windows host cannot reach a macvlan container directly. Docker is only ever driven through its command line with argument arrays, never shell strings."
+    ],
+    "tech": [
+      "Electron",
+      "React",
+      "TypeScript",
+      "Docker"
+    ],
+    "type": "image",
+    "model": "",
+    "up": "y",
+    "cover": "media/pihole-launcher/cover.png",
+    "images": [
+      "media/pihole-launcher/shot-dashboard.jpg",
+      "media/pihole-launcher/shot-prereq.jpg",
+      "media/pihole-launcher/shot-onboarding-1.jpg",
+      "media/pihole-launcher/shot-onboarding-2.jpg",
+      "media/pihole-launcher/shot-onboarding-3.jpg",
+      "media/pihole-launcher/shot-settings.jpg"
+    ],
+    "links": [],
+    "blocks": [
+      {
+        "t": "imgs",
+        "after": 1,
+        "srcs": [
+          "media/pihole-launcher/shot-dashboard.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 3,
+        "srcs": [
+          "media/pihole-launcher/shot-prereq.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 5,
+        "srcs": [
+          "media/pihole-launcher/shot-onboarding-1.jpg",
+          "media/pihole-launcher/shot-onboarding-2.jpg",
+          "media/pihole-launcher/shot-onboarding-3.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 7,
+        "srcs": [
+          "media/pihole-launcher/shot-settings.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "booklet-maker",
+    "title": "Booklet Maker",
+    "category": "Vibecoded projects",
+    "year": "",
+    "status": "built",
+    "summary": "Turn an ebook or document into a print-at-home, fold-in-half booklet PDF. Runs entirely on your own machine.",
+    "description": [
+      "## From ebook to a printable fold-in-half booklet",
+      "Drop in an EPUB, PDF, DOCX, TXT, Markdown, MOBI or AZW3 file and get a PDF whose pages are already shuffled into sheets, so printing double-sided and folding in half reads correctly. It is a small local web app: everything runs on your machine and nothing is uploaded.",
+      "## Preview and partition",
+      "Every chapter or section is listed. Untick the parts you do not want in the printout (front matter, an index), drag to reorder, and click a section to preview its text.",
+      "## Typography and print settings",
+      "Paper size, font, size and line height, margins, page numbers (position and start number), justification, hyphenation and an ink-saving mode. Folding can be a single whole stack, or bundles of a few sheets (signatures) so thick books fold flat without the inner pages creeping out, and optional faint fold marks help with alignment.",
+      "## Two PDFs out",
+      "Generate produces the booklet PDF to print, with pages imposed two-up in fold order, and a plain reading PDF in normal order for proofing the text before using any paper. Layout is rendered with headless Chrome through puppeteer-core, and MOBI and AZW3 files are converted through Calibre first."
+    ],
+    "tech": [
+      "Node.js",
+      "Express",
+      "puppeteer-core",
+      "PDF imposition"
+    ],
+    "type": "image",
+    "model": "",
+    "up": "y",
+    "cover": "media/booklet-maker/cover.png",
+    "images": [
+      "media/booklet-maker/shot-sections.jpg",
+      "media/booklet-maker/shot-preview.jpg",
+      "media/booklet-maker/shot-settings.jpg",
+      "media/booklet-maker/shot-sheet-1.jpg",
+      "media/booklet-maker/shot-sheet-2.jpg",
+      "media/booklet-maker/shot-done.jpg"
+    ],
+    "links": [],
+    "blocks": [
+      {
+        "t": "imgs",
+        "after": 3,
+        "srcs": [
+          "media/booklet-maker/shot-sections.jpg",
+          "media/booklet-maker/shot-preview.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 5,
+        "srcs": [
+          "media/booklet-maker/shot-settings.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 7,
+        "srcs": [
+          "media/booklet-maker/shot-sheet-1.jpg",
+          "media/booklet-maker/shot-sheet-2.jpg",
+          "media/booklet-maker/shot-done.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "formula-student-steering-system",
+    "title": "HU-3 Steering System",
+    "category": "Vehicles",
+    "year": "2026",
+    "status": "built",
+    "summary": "Designing, engineering and manufacturing the steering system for a Formula Student race car during a six-month internship.",
+    "description": [
+      "A much more technical project than those I had done before. Most of the work was designing high-performance functional components, prototyping them and testing them, both physically and with SolidWorks simulations.",
+      "It involved a lot of trial and error, and teaching myself race car engineering, which was fun. After a lot of 3D printing, duct taping, cutting, SolidWorks, welding and even some maths, I finished the final parts list and sent the parts out for production.",
+      "Just a few months after my internship, the car was running and driving."
+    ],
+    "tech": [
+      "SolidWorks",
+      "Simulation",
+      "3D printing",
+      "Welding",
+      "Prototyping"
+    ],
+    "type": "model",
+    "model": "models/formula-student-steering-system.glb",
+    "up": "y",
+    "cover": "media/formula-student-steering-system/cover.jpg",
+    "images": [
+      "media/formula-student-steering-system/img-01.jpg",
+      "media/formula-student-steering-system/img-02.jpg",
+      "media/formula-student-steering-system/img-03.jpg",
+      "media/formula-student-steering-system/img-04.jpg",
+      "media/formula-student-steering-system/img-05.jpg",
+      "media/formula-student-steering-system/img-06.jpg",
+      "media/formula-student-steering-system/img-07.jpg",
+      "media/formula-student-steering-system/img-08.jpg",
+      "media/formula-student-steering-system/img-09.jpg",
+      "media/formula-student-steering-system/img-10.jpg",
+      "media/formula-student-steering-system/img-11.jpg"
+    ],
+    "links": [],
+    "blocks": [
+      {
+        "t": "imgs",
+        "after": -1,
+        "srcs": [
+          "media/formula-student-steering-system/img-01.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 0,
+        "srcs": [
+          "media/formula-student-steering-system/img-02.jpg",
+          "media/formula-student-steering-system/img-03.jpg",
+          "media/formula-student-steering-system/img-04.jpg",
+          "media/formula-student-steering-system/img-05.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 1,
+        "srcs": [
+          "media/formula-student-steering-system/img-06.jpg",
+          "media/formula-student-steering-system/img-07.jpg",
+          "media/formula-student-steering-system/img-08.jpg",
+          "media/formula-student-steering-system/img-09.jpg",
+          "media/formula-student-steering-system/img-10.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 2,
+        "srcs": [
+          "media/formula-student-steering-system/img-11.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "snowboard-bindings",
+    "title": "Moduwrap: Adjustable Snowboard Binding",
+    "category": "Product",
+    "year": "2023",
+    "status": "graduation project",
+    "summary": "A snowboard binding whose flex can be changed after purchase: swappable stiffness members in the chassis and swappable trays in the highback.",
+    "description": [
+      "## Overview",
+      "This was my graduation internship project, carried out at the offices of Low Pressure Studios in Amsterdam under the supervision of the Bataleon, Rome and Lobster design teams. The outcome was a design report, a research report and three ready-to-ride prototypes printed in SLS.",
+      "## The problem",
+      "Bindings have become very adjustable for size, but almost nothing about their feel or performance can be changed once you have bought them. Each model targets one kind of rider, so a wrong choice, a better skill level or a different riding style can mean buying a new pair. The brief was to design a binding that is more adaptable in feel and performance without becoming complicated.",
+      "## The client",
+      "The project was done for Low Pressure Studios, the Amsterdam company behind Rome SDS, Bataleon and Lobster. The binding was designed for Bataleon, whose design language is modern and bold. I worked in a 15 to 20 week window, so research, ideation and prototyping had to run in parallel.",
+      "## Research and orientation",
+      "Snowboarding was new to me, so I started with the basics: the anatomy of a binding (highback, chassis, baseplate, base cushion, straps, ladders and buckles), strap-in versus speed-entry designs, and how the existing chassis types (Fullwrap, Asymwrap, unibody) change the feel. I watched grassroots reviewers, talked to the product manager and binding developer, and built a competition map of binding designs along four factors: silhouette, materials, texture and colour. That map shaped the look of the final product.",
+      "## Ideas and direction",
+      "After a whiteboard session and a session with the client, four themes were chosen to explore: adjustable flex (highback and chassis), a modular Moduwrap chassis, a conforming lattice base cushion, and pressure-distributing straps. Flex comes from the chassis (side-to-side, torsional and mid flex) and the highback, so those became the focus.",
+      "## The Moduwrap chassis",
+      "The idea: make one or both stress members of the chassis removable. With them in, forces reach the baseplate through four contact points, like a Fullwrap chassis. Remove one and it behaves like an Asymwrap with three. I built and tested four prototypes, mostly 3D printed in PLA and nylon. The first was too thin and the stress members did not fit. The second fitted the baseplate and let the stiffness members slide in and out. The third added a tool-free click-button lock, left and right markings and topology-optimised members. The fourth refined the click mechanism, the angle of the heel wrap and the surface transitions.",
+      "A simple rope-and-weight test (a constant 10 kg load) showed a clear difference in mid flex between the modes, roughly 10 mm of deflection. Heavier 60 to 70 kg tests checked structural integrity. It was not a lab-grade test, but it was the most trustworthy one possible in the time.",
+      "## The adjustable highback",
+      "I modelled more than 50 highbacks directly in CAD, placing each next to reference parts and moving on to the next, which sped up diverging and converging. They narrowed to three mechanisms: stiffness rods, replaceable keys, and swappable stiffness trays. The tray concept won. The highback itself is made from a soft TPU shell with an EVA foam core and is nearly a \"no-back\" feel on its own. Slide in a tray and the stiffness changes. The prototypes confirmed the body could be thin (about 4 to 6 mm), saving weight and cost, and tested a dovetail mechanism for tool-free tilt adjustment.",
+      "## The final concept",
+      "The final concept pairs the Moduwrap chassis in nylon with the soft highback and a set of trays in carbon fibre, bamboo, ABS and nylon. Soft, medium and stiff modes are chosen simply by which tray you slip in. Colour pops mark the parts a rider needs to notice. I chose a safe, modern-minimalist styling on purpose, because the time went into the mechanics.",
+      "The name Moduwrap comes from the modular chassis, which lets riders switch between two conventionally different riding experiences, Asymwrap and Fullwrap. Fullwrap sends your power straight to the board so the boot feels connected. Asymwrap moves more naturally with your legs and gives a smoother, surfier side-to-side feel. Moduwrap lets you switch between them for park, backcountry or powder, and suits riders who are progressing and want to try different styles.",
+      "The Flextech highback ships almost flexible enough to feel like no highback at all. The rider picks a tray in NylonGF, carbon fibre or weather-treated bamboo, giving three to five stiffness levels. Soft mode is forgiving and playful for freestyle and park. Medium balances response and flexibility for all-mountain riding. Stiff mode gives the support and stability for fast, aggressive carving, at the cost of needing more precise rider input.",
+      "## What I would do next",
+      "Riding tests come first, then testing materials and tray stiffness ranges, injection-moulding feasibility for the double-shot TPU and EVA highback, and optional aluminium braces in the chassis if rider feedback asks for them."
+    ],
+    "tech": [
+      "CAD",
+      "FEA",
+      "FDM 3D printing",
+      "Topology optimisation",
+      "Generative lattices",
+      "Prototyping",
+      "User testing",
+      "CMF"
+    ],
+    "type": "model",
+    "model": "models/snowboard-bindings.glb",
+    "up": "y",
+    "cover": "media/snowboard-bindings/cover.jpg",
+    "images": [
+      "media/snowboard-bindings/img-01.jpg",
+      "media/snowboard-bindings/img-02.jpg",
+      "media/snowboard-bindings/img-03.jpg",
+      "media/snowboard-bindings/img-04.jpg",
+      "media/snowboard-bindings/img-05.jpg",
+      "media/snowboard-bindings/img-06.jpg",
+      "media/snowboard-bindings/img-07.jpg",
+      "media/snowboard-bindings/img-08.jpg",
+      "media/snowboard-bindings/img-09.jpg",
+      "media/snowboard-bindings/img-10.jpg",
+      "media/snowboard-bindings/img-11.jpg",
+      "media/snowboard-bindings/img-12.jpg",
+      "media/snowboard-bindings/img-13.jpg",
+      "media/snowboard-bindings/img-14.jpg",
+      "media/snowboard-bindings/img-15.jpg",
+      "media/snowboard-bindings/img-16.jpg",
+      "media/snowboard-bindings/img-17.jpg",
+      "media/snowboard-bindings/img-18.jpg",
+      "media/snowboard-bindings/img-19.jpg",
+      "media/snowboard-bindings/img-20.jpg",
+      "media/snowboard-bindings/img-21.jpg",
+      "media/snowboard-bindings/img-22.jpg",
+      "media/snowboard-bindings/img-23.jpg",
+      "media/snowboard-bindings/img-24.jpg",
+      "media/snowboard-bindings/img-25.jpg"
+    ],
+    "links": [],
+    "blocks": [
+      {
+        "t": "imgs",
+        "after": 7,
+        "srcs": [
+          "media/snowboard-bindings/img-01.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 9,
+        "srcs": [
+          "media/snowboard-bindings/img-02.jpg",
+          "media/snowboard-bindings/img-03.jpg",
+          "media/snowboard-bindings/img-04.jpg",
+          "media/snowboard-bindings/img-05.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 12,
+        "srcs": [
+          "media/snowboard-bindings/img-06.jpg",
+          "media/snowboard-bindings/img-07.jpg",
+          "media/snowboard-bindings/img-08.jpg",
+          "media/snowboard-bindings/img-09.jpg",
+          "media/snowboard-bindings/img-10.jpg",
+          "media/snowboard-bindings/img-11.jpg",
+          "media/snowboard-bindings/img-12.jpg",
+          "media/snowboard-bindings/img-13.jpg",
+          "media/snowboard-bindings/img-14.jpg",
+          "media/snowboard-bindings/img-15.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 14,
+        "srcs": [
+          "media/snowboard-bindings/img-16.jpg",
+          "media/snowboard-bindings/img-17.jpg",
+          "media/snowboard-bindings/img-18.jpg",
+          "media/snowboard-bindings/img-19.jpg",
+          "media/snowboard-bindings/img-20.jpg",
+          "media/snowboard-bindings/img-21.jpg",
+          "media/snowboard-bindings/img-22.jpg",
+          "media/snowboard-bindings/img-23.jpg",
+          "media/snowboard-bindings/img-24.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 18,
+        "srcs": [
+          "media/snowboard-bindings/img-25.jpg"
+        ]
+      }
+    ],
+    "pose": [
+      -0.129453,
+      -0.693575,
+      0.696199,
+      -0.132299
+    ]
+  },
+  {
+    "id": "desk-organizerr",
+    "title": "desk Organizerr",
+    "category": "Product",
+    "year": "2026",
+    "status": "",
+    "summary": "",
+    "description": [],
+    "tech": [],
+    "type": "model",
+    "model": "models/desk-organizerr.glb",
+    "up": "y",
+    "cover": "",
+    "images": [],
+    "links": []
+  },
+  {
+    "id": "lampp",
+    "title": "lampp",
+    "category": "Product",
+    "year": "2026",
+    "status": "",
+    "summary": "",
+    "description": [],
+    "tech": [],
+    "type": "model",
+    "model": "models/lampp.glb",
+    "up": "y",
+    "cover": "",
+    "images": [],
+    "links": []
+  },
+  {
+    "id": "bag-webby",
+    "title": "Bag Webby",
+    "category": "Product",
+    "year": "2026",
+    "status": "",
+    "summary": "custom 3d printed handbag",
+    "description": [],
+    "tech": [],
+    "type": "model",
+    "model": "models/bag-webby.glb",
+    "up": "y",
+    "cover": "",
+    "images": [],
+    "links": []
+  },
+  {
+    "id": "rope-holder-thingy",
+    "title": "rope holder thingy",
+    "category": "Mechanical",
+    "year": "2026",
+    "status": "",
+    "summary": "",
+    "description": [],
+    "tech": [],
+    "type": "model",
+    "model": "models/rope-holder-thingy.glb",
+    "up": "y",
+    "cover": "",
+    "images": [],
+    "links": []
+  },
+  {
+    "id": "roller-handle",
+    "title": "roller handle",
+    "category": "Mechanical",
+    "year": "2026",
+    "status": "",
+    "summary": "",
+    "description": [],
+    "tech": [],
+    "type": "model",
+    "model": "models/roller-handle.glb",
+    "up": "y",
+    "cover": "",
+    "images": [],
+    "links": []
+  },
+  {
+    "id": "lights-stand",
+    "title": "lights stand",
+    "category": "Product",
+    "year": "2026",
+    "status": "",
+    "summary": "",
+    "description": [],
+    "tech": [],
+    "type": "model",
+    "model": "models/lights-stand.glb",
+    "up": "y",
+    "cover": "",
+    "images": [],
+    "links": [],
+    "pose": [
+      0.707107,
+      0,
+      0,
+      -0.707107
+    ]
+  },
+  {
+    "id": "plug-v1",
+    "title": "plug v1",
+    "category": "Tools",
+    "year": "2026",
+    "status": "",
+    "summary": "",
+    "description": [],
+    "tech": [],
+    "type": "model",
+    "model": "models/plug-v1.glb",
+    "up": "y",
+    "cover": "",
+    "images": [],
+    "links": []
+  },
+  {
+    "id": "phone-2ace",
+    "title": "phone 2ace",
+    "category": "Product",
+    "year": "2026",
+    "status": "",
+    "summary": "",
+    "description": [],
+    "tech": [],
+    "type": "model",
+    "model": "models/phone-2ace.glb",
+    "up": "y",
+    "cover": "",
+    "images": [
+      "media/phone-2ace/img-01.jpg",
+      "media/phone-2ace/img-02.jpg",
+      "media/phone-2ace/img-03.jpg",
+      "media/phone-2ace/img-04.jpg",
+      "media/phone-2ace/img-05.jpg",
+      "media/phone-2ace/img-06.jpg",
+      "media/phone-2ace/img-07.jpg"
+    ],
+    "links": [],
+    "blocks": [
+      {
+        "t": "imgs",
+        "after": -1,
+        "srcs": [
+          "media/phone-2ace/img-01.jpg",
+          "media/phone-2ace/img-02.jpg",
+          "media/phone-2ace/img-03.jpg",
+          "media/phone-2ace/img-04.jpg",
+          "media/phone-2ace/img-05.jpg",
+          "media/phone-2ace/img-06.jpg",
+          "media/phone-2ace/img-07.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nozzles",
+    "title": "nozzles",
+    "category": "Mechanical",
+    "year": "2026",
+    "status": "",
+    "summary": "",
+    "description": [],
+    "tech": [],
+    "type": "model",
+    "model": "models/nozzles.glb",
+    "up": "y",
+    "cover": "",
+    "images": [],
+    "links": []
+  },
+  {
+    "id": "bicycle-chain-guard",
+    "title": "bicycle chain guard",
+    "category": "Tools",
+    "year": "2026",
+    "status": "",
+    "summary": "",
+    "description": [],
+    "tech": [],
+    "type": "model",
+    "model": "models/bicycle-chain-guard.glb",
+    "up": "y",
+    "cover": "",
+    "images": [],
+    "links": [],
+    "pose": [
+      0.411901,
+      -0.642356,
+      0.496537,
+      0.413724
+    ]
+  },
+  {
+    "id": "nozzles-v2",
+    "title": "nozzles v2",
+    "category": "Mechanical",
+    "year": "2026",
+    "status": "",
+    "summary": "",
+    "description": [],
+    "tech": [],
+    "type": "model",
+    "model": "models/nozzles-v2.glb",
+    "up": "y",
+    "cover": "",
+    "images": [],
+    "links": [],
+    "hidden": [
+      2,
+      3,
+      4
+    ],
+    "pose": [
+      0.007445,
+      -0.775784,
+      -0.171263,
+      0.607267
+    ]
+  },
+  {
+    "id": "qtents-metal-components",
+    "title": "Metal Components for Mass Production",
+    "category": "Tensile Structures",
+    "year": "2023–2025",
+    "status": "shipped",
+    "summary": "Brackets, connectors and fittings, taken from design to production with manufacturers on three continents.",
+    "description": [
+      "Besides the main tent work I designed many of the surrounding metal components: brackets, connectors, the parts that hold everything together. I worked through the full process: initial design, 3D printed prototypes, small-scale manufacturing runs to validate geometry, and then production relationships with manufacturers in China, India, Sri Lanka and various European countries, covering finishes, colour variants and material choices.",
+      "I worked with metal manufacturers in China, standard parts suppliers across Europe and textile manufacturers in India and Sri Lanka, and with manufacturers within Europe for prototyping and smaller runs."
+    ],
+    "tech": [
+      "CAD",
+      "3D printing",
+      "DFM",
+      "Supplier management",
+      "CMF"
+    ],
+    "type": "image",
+    "model": "",
+    "up": "y",
+    "cover": "media/qtents-metal-components/cover-1792434286343.jpg",
+    "images": [
+      "media/qtents-metal-components/img-01.jpg",
+      "media/qtents-metal-components/img-02.jpg",
+      "media/qtents-metal-components/img-03.jpg",
+      "media/qtents-metal-components/img-04.jpg",
+      "media/qtents-metal-components/img-05.jpg",
+      "media/qtents-metal-components/img-06.jpg",
+      "media/qtents-metal-components/img-07.jpg",
+      "media/qtents-metal-components/img-08.jpg",
+      "media/qtents-metal-components/img-09.jpg",
+      "media/qtents-metal-components/img-10.jpg",
+      "media/qtents-metal-components/img-11.jpg",
+      "media/qtents-metal-components/img-12.jpg",
+      "media/qtents-metal-components/img-13.jpg"
+    ],
+    "links": [],
+    "blocks": [
+      {
+        "t": "imgs",
+        "after": 0,
+        "srcs": [
+          "media/qtents-metal-components/img-01.jpg",
+          "media/qtents-metal-components/img-02.jpg",
+          "media/qtents-metal-components/img-03.jpg",
+          "media/qtents-metal-components/img-04.jpg",
+          "media/qtents-metal-components/img-05.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 1,
+        "srcs": [
+          "media/qtents-metal-components/img-06.jpg",
+          "media/qtents-metal-components/img-07.jpg",
+          "media/qtents-metal-components/img-08.jpg",
+          "media/qtents-metal-components/img-09.jpg",
+          "media/qtents-metal-components/img-10.jpg",
+          "media/qtents-metal-components/img-11.jpg",
+          "media/qtents-metal-components/img-12.jpg",
+          "media/qtents-metal-components/img-13.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "qtents-internal-tools",
+    "title": "Internal Digital Tools",
+    "category": "Tensile Structures",
+    "year": "2023–2025",
+    "status": "shipped",
+    "summary": "Sidewall calculator, DXF translator and other small tools shipped across departments.",
+    "description": [
+      "From afternoon vibe-codes to weeks-long debugging marathons, I shipped internal tools across departments that turned messy, complex problems into clean, simple answers.",
+      "The sidewall calculator is an HTML tool for stretch tents: enter the wall dimensions and it works out exactly how many standard wall sections fit, with full offset and edge clearance accounted for, so sales staff no longer have to guess when quoting even the most complex projects.",
+      "The DXF translator takes any DXF file, pulls out all the text objects, translates them into the language you need and outputs a new DXF identical to the original, just in a different language. It helped the team collaborate with engineers in Czech."
+    ],
+    "tech": [
+      "HTML / JavaScript",
+      "DXF",
+      "AI-assisted coding"
+    ],
+    "type": "image",
+    "model": "",
+    "up": "y",
+    "cover": "media/qtents-internal-tools/cover.jpg",
+    "images": [
+      "media/qtents-internal-tools/img-01.jpg",
+      "media/qtents-internal-tools/img-02.jpg",
+      "media/qtents-internal-tools/img-03.jpg"
+    ],
+    "links": [],
+    "blocks": [
+      {
+        "t": "imgs",
+        "after": 0,
+        "srcs": [
+          "media/qtents-internal-tools/img-01.jpg",
+          "media/qtents-internal-tools/img-02.jpg",
+          "media/qtents-internal-tools/img-03.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "qtents-inflatables",
+    "title": "Inflatable Tent Generator",
+    "category": "Tensile Structures",
+    "year": "2023–2025",
+    "status": "shipped",
+    "summary": "A modular Grasshopper script that designs an inflatable tent from just three parameters.",
+    "description": [
+      "During my time at the company we moved into inflatables. What began as exploratory projects ended in a full-scale procurement contract. To support it, I built a modular Grasshopper script for modelling and designing inflatable tents.",
+      "These structures are all built around a core arch geometry, so the whole tent is controlled by three parameters: arch height, arch width and number of arches. From these the script unrolls the panels of each tube section individually, with all the marked positions for physical components such as welded fittings. It also handles splitting tubes into panels and the layout of components, deliberately offsetting elements so seams do not align, which reduces the risk of leaks."
+    ],
+    "tech": [
+      "Grasshopper",
+      "Parametric design",
+      "Unrolling",
+      "Pattern making"
+    ],
+    "type": "image",
+    "model": "",
+    "up": "y",
+    "cover": "media/qtents-inflatables/cover-1792434267364.jpg",
+    "images": [
+      "media/qtents-inflatables/img-01.jpg",
+      "media/qtents-inflatables/img-02.jpg",
+      "media/qtents-inflatables/img-03.jpg",
+      "media/qtents-inflatables/img-04.jpg"
+    ],
+    "links": [],
+    "blocks": [
+      {
+        "t": "imgs",
+        "after": 0,
+        "srcs": [
+          "media/qtents-inflatables/img-01.jpg",
+          "media/qtents-inflatables/img-02.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 1,
+        "srcs": [
+          "media/qtents-inflatables/img-03.jpg",
+          "media/qtents-inflatables/img-04.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "traffic-light-lamps",
+    "title": "Junkyard Traffic Lights → Smart Lamps",
+    "category": "Product",
+    "year": "",
+    "status": "built",
+    "summary": "Traffic lights rescued from a junkyard and converted into smart lamps.",
+    "description": [],
+    "tech": [
+      "Electronics",
+      "Microcontrollers"
+    ],
+    "type": "image",
+    "model": "",
+    "up": "y",
+    "cover": "media/traffic-light-lamps/cover.jpg",
+    "images": [
+      "media/traffic-light-lamps/img-01.jpg",
+      "media/traffic-light-lamps/img-02.jpg"
+    ],
+    "links": [],
+    "blocks": [
+      {
+        "t": "imgs",
+        "after": -1,
+        "srcs": [
+          "media/traffic-light-lamps/img-01.jpg",
+          "media/traffic-light-lamps/img-02.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "trashboxone",
+    "title": "TrashBoxOne: Shoebox Bluetooth Speaker",
+    "category": "Product",
+    "year": "",
+    "status": "built",
+    "summary": "A Bluetooth speaker built into a shoebox.",
+    "description": [],
+    "tech": [
+      "Electronics",
+      "Audio"
+    ],
+    "type": "image",
+    "model": "",
+    "up": "y",
+    "cover": "media/trashboxone/cover.jpg",
+    "images": [
+      "media/trashboxone/img-01.jpg"
+    ],
+    "links": [],
+    "blocks": [
+      {
+        "t": "imgs",
+        "after": -1,
+        "srcs": [
+          "media/trashboxone/img-01.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "powerbase",
+    "title": "PowerBase",
+    "category": "Product",
+    "year": "",
+    "status": "prototype",
+    "summary": "A desk charging station with two MagSafe pucks, two Qi chargers and a 120 W USB-C port, in transparent polycarbonate.",
+    "description": [
+      "The PowerBase is a desk accessory that rethinks the charging station. Two MagSafe pucks charge two phones at once and let you dock a phone horizontally or vertically while it charges and idles on your desk. Two standard Qi chargers are embedded in the base. It also has two USB-C ports and two USB-A ports, and one of the USB-C ports can deliver 120 W for fast charging of several devices.",
+      "The design is a transparent polycarbonate build, reminiscent of the aquarium iMacs of the past, so the visible wiring and electronics become part of the look. A physical 2-in-1 button on the front of the base works as a power switch and a time regulator: it lets you adjust the overall charging speed or power the device down entirely, which also helps prolong battery life.",
+      "## A prototype for home",
+      "Ideally the PowerBase would be made of slick polycarbonate with all the details, like the visible wiring, on show. To make a version for myself on my small FDM printer I had to modify the design: the scale was less dramatic, and so were the proportions. I played with the slicer to get a fuzzy surface texture that hides layer lines, and added creature comforts such as good cable management, a dab of wax to diffuse the indicator LEDs, and rubber feet. With that, the first prototype was done."
+    ],
+    "tech": [
+      "Product design",
+      "CAD",
+      "Rendering",
+      "FDM 3D printing"
+    ],
+    "type": "image",
+    "model": "",
+    "up": "y",
+    "cover": "media/powerbase/cover-1792434053176.jpg",
+    "images": [
+      "media/powerbase/img-01.jpg",
+      "media/powerbase/img-02.jpg",
+      "media/powerbase/img-03.jpg",
+      "media/powerbase/img-04.jpg",
+      "media/powerbase/img-05.jpg",
+      "media/powerbase/img-06.jpg",
+      "media/powerbase/img-07.jpg",
+      "media/powerbase/img-08.jpg",
+      "media/powerbase/img-09.jpg",
+      "media/powerbase/img-10.jpg",
+      "media/powerbase/img-11.jpg",
+      "media/powerbase/img-12.jpg"
+    ],
+    "links": [],
+    "blocks": [
+      {
+        "t": "imgs",
+        "after": 0,
+        "srcs": [
+          "media/powerbase/img-01.jpg",
+          "media/powerbase/img-02.jpg",
+          "media/powerbase/img-03.jpg",
+          "media/powerbase/img-04.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 1,
+        "srcs": [
+          "media/powerbase/img-05.jpg",
+          "media/powerbase/img-06.jpg",
+          "media/powerbase/img-07.jpg",
+          "media/powerbase/img-08.jpg",
+          "media/powerbase/img-09.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 3,
+        "srcs": [
+          "media/powerbase/img-10.jpg",
+          "media/powerbase/img-11.jpg",
+          "media/powerbase/img-12.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rs-71-ev-hypercar",
+    "title": "RS-71 EV Hypercar",
+    "category": "Vehicles",
+    "year": "",
+    "status": "concept",
+    "summary": "An EV hypercar designed with one goal: to be faster than any production EV in a straight line.",
+    "description": [
+      "Inspired by the long-tailed prototype cars of years past, the RS 71 was designed with one goal in mind: to go faster than any production EV in a straight line. This is my vision of that vehicle.",
+      "At the core of the design philosophy was aerodynamic excellence. I sculpted the body to slice through the air like a blade, with a sinuous, sleek silhouette that minimises frontal area and reduces drag.",
+      "The canopy-style two-seater arrangement borrows from fighter jets: the passenger sits behind the driver, so both occupants get an unobstructed view of any opponent in a drag race, which streamlines the car even further.",
+      "A high-downforce track version was also envisioned, freeing up the underbody for venturi tunnels and adding a massive wing. The RS 71 was never designed to be mass-produced. Its exclusivity would make it the crown jewel of performance EVs and a halo product for the Mahindra brand: a limited production run, crafted with painstaking care in India, where each car would be a work of art coveted by enthusiasts and collectors alike."
+    ],
+    "tech": [
+      "Automotive design",
+      "Concept design",
+      "Rendering"
+    ],
+    "type": "image",
+    "model": "",
+    "up": "y",
+    "cover": "media/rs-71-ev-hypercar/cover-1792434067896.jpg",
+    "images": [
+      "media/rs-71-ev-hypercar/img-01.jpg",
+      "media/rs-71-ev-hypercar/img-02.jpg",
+      "media/rs-71-ev-hypercar/img-03.jpg",
+      "media/rs-71-ev-hypercar/img-04.jpg",
+      "media/rs-71-ev-hypercar/img-05.jpg",
+      "media/rs-71-ev-hypercar/img-06.jpg",
+      "media/rs-71-ev-hypercar/img-07.jpg",
+      "media/rs-71-ev-hypercar/img-08.jpg",
+      "media/rs-71-ev-hypercar/img-09.jpg",
+      "media/rs-71-ev-hypercar/img-10.jpg",
+      "media/rs-71-ev-hypercar/img-11.jpg"
+    ],
+    "links": [],
+    "blocks": [
+      {
+        "t": "imgs",
+        "after": -1,
+        "srcs": [
+          "media/rs-71-ev-hypercar/img-01.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 0,
+        "srcs": [
+          "media/rs-71-ev-hypercar/img-02.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 1,
+        "srcs": [
+          "media/rs-71-ev-hypercar/img-03.jpg",
+          "media/rs-71-ev-hypercar/img-04.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 2,
+        "srcs": [
+          "media/rs-71-ev-hypercar/img-05.jpg",
+          "media/rs-71-ev-hypercar/img-06.jpg",
+          "media/rs-71-ev-hypercar/img-07.jpg",
+          "media/rs-71-ev-hypercar/img-08.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 3,
+        "srcs": [
+          "media/rs-71-ev-hypercar/img-09.jpg",
+          "media/rs-71-ev-hypercar/img-10.jpg",
+          "media/rs-71-ev-hypercar/img-11.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "polestar-concept-99",
+    "title": "Polestar Concept 99",
+    "category": "Vehicles",
+    "year": "",
+    "status": "concept",
+    "summary": "A concept hypercar for a Polestar brief: a new form of performance for the electric age.",
+    "description": [
+      "The brief was to design a Polestar vehicle about the experience of performance and the advanced technical story that enables it in a sustainable way: a new form of performance, one for the electric age.",
+      "Concept 99 combines the insanity of the analogue supercars of the 20th century with the EV technology of the 21st, recreating that driving experience sustainably. Central to the design are a brutalist recycled-aluminium body contrasted with a streamlined cockpit. The three-seater layout gives the driver a faux single-seater experience and strong frontal visibility without compromising practicality, and a vertically stacked, mid-mounted battery pack gives the feel of a retro supercar (it will go sideways!).",
+      "## Track mode",
+      "Putting the car in track mode lowers the venturi tunnels underneath and makes the spoiler extra active. Regen at the front wheels is turned all the way up to emulate that liftoff oversteer, and 80% of the 1600 electric horses are sent to the rear wheels.",
+      "I envision the body made of recycled aluminium and the carbon fibre recycled from old race car components, which adds to the novelty and makes the car more sustainable. The greenhouse is coated in semi-transparent tinted solar cells that can trickle-charge the car when it is not in use."
+    ],
+    "tech": [
+      "Automotive design",
+      "Sketching",
+      "Concept design",
+      "Rendering"
+    ],
+    "type": "image",
+    "model": "",
+    "up": "y",
+    "cover": "media/polestar-concept-99/cover-1792434077604.jpg",
+    "images": [
+      "media/polestar-concept-99/img-01.jpg",
+      "media/polestar-concept-99/img-02.jpg",
+      "media/polestar-concept-99/img-03.jpg",
+      "media/polestar-concept-99/img-04.jpg",
+      "media/polestar-concept-99/img-05.jpg",
+      "media/polestar-concept-99/img-06.jpg",
+      "media/polestar-concept-99/img-07.jpg"
+    ],
+    "links": [],
+    "blocks": [
+      {
+        "t": "imgs",
+        "after": -1,
+        "srcs": [
+          "media/polestar-concept-99/img-01.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 0,
+        "srcs": [
+          "media/polestar-concept-99/img-02.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 1,
+        "srcs": [
+          "media/polestar-concept-99/img-03.jpg",
+          "media/polestar-concept-99/img-04.jpg",
+          "media/polestar-concept-99/img-05.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 4,
+        "srcs": [
+          "media/polestar-concept-99/img-06.jpg",
+          "media/polestar-concept-99/img-07.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "batbuggy",
+    "title": "BatBuggy",
+    "category": "Vehicles",
+    "year": "",
+    "status": "concept",
+    "summary": "A hyper-aggressive, Batmobile-inspired buggy: a modelling and rendering project.",
+    "description": [
+      "This project focused on the modelling process and on post-processing in Blender and Photoshop. I concentrated on making stunning visuals rather than following a full design process, because the aim was to learn to make renders, both video and photo. The buggy itself is hyper-aggressive (it has rockets on the back!) and tries to hark back to the classic red and black colour scheme of Batman in the 60s.",
+      "\"Throw caution to the wind\" was the sentence thrown around a lot while designing it. I wanted to keep the forms basic but add enough detail and complexity for standout final images and videos. The buggy draws inspiration from the Batmobile of yore, combining fluid forms with strong boxy features to accentuate its utility, and I experimented with sharp, angular, bat-like features while keeping a rugged, utilitarian look.",
+      "And yes, it has underglow. I kept the colour scheme stealthy and black, with hints of red to draw parallels to the comic books. The entire design was done in Fusion 360, with rendering in Blender; the concept art combines Photoshop and Blender."
+    ],
+    "tech": [
+      "Fusion 360",
+      "Blender",
+      "Photoshop",
+      "Rendering"
+    ],
+    "type": "image",
+    "model": "",
+    "up": "y",
+    "cover": "media/batbuggy/cover-1792434086969.jpg",
+    "images": [
+      "media/batbuggy/img-01.jpg",
+      "media/batbuggy/img-02.jpg",
+      "media/batbuggy/img-03.jpg",
+      "media/batbuggy/img-04.jpg",
+      "media/batbuggy/img-05.jpg",
+      "media/batbuggy/img-06.jpg"
+    ],
+    "links": [],
+    "blocks": [
+      {
+        "t": "imgs",
+        "after": -1,
+        "srcs": [
+          "media/batbuggy/img-01.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 0,
+        "srcs": [
+          "media/batbuggy/img-02.jpg",
+          "media/batbuggy/img-03.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 1,
+        "srcs": [
+          "media/batbuggy/img-04.jpg",
+          "media/batbuggy/img-05.jpg",
+          "media/batbuggy/img-06.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crt-music-visualiser",
+    "title": "CRT Music Visualiser",
+    "category": "Product",
+    "year": "",
+    "status": "built",
+    "summary": "A CRT turned into an oscilloscope-style visualiser running on music signals, next to a Spotify-connected 70s amp and early-2000s speakers.",
+    "description": [
+      "A CRT visualiser running on music signals from my shoebox Bluetooth speaker, part of a Spotify-integrated home theatre powered by a 1970s amplifier and early-2000s speakers."
+    ],
+    "tech": [
+      "Electronics",
+      "Audio",
+      "Analogue display"
+    ],
+    "type": "image",
+    "model": "",
+    "up": "y",
+    "cover": "media/crt-music-visualiser/cover.jpg",
+    "images": [
+      "media/crt-music-visualiser/img-01.jpg"
+    ],
+    "links": [],
+    "blocks": [
+      {
+        "t": "imgs",
+        "after": 0,
+        "srcs": [
+          "media/crt-music-visualiser/img-01.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "older-projects",
+    "title": "Older Projects",
+    "category": "Product",
+    "year": "",
+    "status": "archive",
+    "summary": "A selection of earlier design and concept projects: vehicles, scooters and accessories.",
+    "description": [],
+    "tech": [
+      "Concept design"
+    ],
+    "type": "image",
+    "model": "",
+    "up": "y",
+    "cover": "media/older-projects/cover-1792434111430.jpg",
+    "images": [
+      "media/older-projects/img-01.jpg",
+      "media/older-projects/img-02.jpg",
+      "media/older-projects/img-03.jpg",
+      "media/older-projects/img-04.jpg",
+      "media/older-projects/img-05.jpg",
+      "media/older-projects/img-06.jpg"
+    ],
+    "links": [],
+    "blocks": [
+      {
+        "t": "imgs",
+        "after": -1,
+        "srcs": [
+          "media/older-projects/img-01.jpg",
+          "media/older-projects/img-02.jpg",
+          "media/older-projects/img-03.jpg",
+          "media/older-projects/img-04.jpg",
+          "media/older-projects/img-05.jpg",
+          "media/older-projects/img-06.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "graphic-design",
+    "title": "Graphic Design",
+    "category": "Product",
+    "year": "",
+    "status": "ongoing",
+    "summary": "Posters and graphic experiments.",
+    "description": [],
+    "tech": [
+      "Graphic design"
+    ],
+    "type": "image",
+    "model": "",
+    "up": "y",
+    "cover": "media/graphic-design/cover-1792434135689.jpg",
+    "images": [
+      "media/graphic-design/img-01.jpg",
+      "media/graphic-design/img-02.jpg",
+      "media/graphic-design/img-03.jpg",
+      "media/graphic-design/img-04.jpg",
+      "media/graphic-design/img-05.jpg",
+      "media/graphic-design/img-06.jpg",
+      "media/graphic-design/img-07.jpg",
+      "media/graphic-design/img-08.jpg"
+    ],
+    "links": [],
+    "blocks": [
+      {
+        "t": "imgs",
+        "after": -1,
+        "srcs": [
+          "media/graphic-design/img-01.jpg",
+          "media/graphic-design/img-02.jpg",
+          "media/graphic-design/img-03.jpg",
+          "media/graphic-design/img-04.jpg",
+          "media/graphic-design/img-05.jpg",
+          "media/graphic-design/img-06.jpg",
+          "media/graphic-design/img-07.jpg",
+          "media/graphic-design/img-08.jpg"
+        ]
+      }
+    ]
+  }
+]

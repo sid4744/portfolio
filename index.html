@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portfolio</title>
+<meta name="theme-color" content="#050505">
+<meta name="description" content="An explorable 3D map of design, CAD and software projects.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="Sidhant Sridhar - Projects">
+<meta property="og:description" content="Industrial design engineer, from concept to construction. An explorable 3D map of projects.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="css/style.css">
+<script type="importmap">
+{ "imports": {
+  "three": "./vendor/three/three.module.js",
+  "three/addons/": "./vendor/three/addons/"
+} }
+</script>
+</head>
+<body class="booting">
+<canvas id="gl" aria-hidden="true"></canvas>
+<div id="labels" aria-hidden="true"></div>
+
+<header class="hud top">
+  <button class="ink brand" id="brand" type="button">PORTFOLIO</button>
+  <nav class="modes" aria-label="View">
+    <button class="ink mode" data-mode="sphere" type="button">SPHERE</button>
+    <button class="ink mode" data-mode="index" type="button">INDEX</button>
+    <button class="ink mode" id="aboutBtn" type="button">ABOUT</button>
+  </nav>
+</header>
+
+<footer class="hud bottom">
+  <div class="legend" id="legend"></div>
+  <p class="hints ink" id="hints">DRAG · TRACKPAD · ARROWS &mdash; LOOK &nbsp;/&nbsp; SCROLL &middot; PINCH &middot; W S &mdash; MOVE &nbsp;/&nbsp; TAB &mdash; NEXT &nbsp;/&nbsp; ENTER &mdash; OPEN</p>
+  <canvas id="mini" width="360" height="180" title="Click to jump"></canvas>
+</footer>
+
+<div id="loader" class="ink"><span id="loadText">LOADING 00/00</span><i id="loadBar"></i></div>
+<div id="tip" class="ink" hidden></div>
+<div id="lightbox" hidden></div>
+
+<main id="index" hidden>
+  <div class="index-head">
+    <h1 id="indexTitle"></h1>
+    <div class="chips" id="chips"></div>
+  </div>
+  <div class="grid" id="grid"></div>
+</main>
+
+<section id="detail" class="sheet" hidden aria-modal="true" role="dialog" aria-labelledby="dTitle">
+  <div class="viewer" id="viewer">
+    <img id="dCover" alt="" hidden>
+    <p class="viewer-hint ink">DRAG TO ROTATE &middot; SCROLL TO ZOOM</p>
+  </div>
+  <article class="info ink" id="info"></article>
+  <div id="rows"></div>
+  <button class="ink close" id="dClose" type="button" aria-label="Close">CLOSE &times;</button>
+  <button class="ink step prev" id="dPrev" type="button" aria-label="Previous project">&larr;</button>
+  <button class="ink step next" id="dNext" type="button" aria-label="Next project">&rarr;</button>
+</section>
+
+<section id="about" class="sheet about" hidden role="dialog" aria-modal="true">
+  <article class="info ink wide" id="aboutBody"></article>
+  <button class="ink close" id="aClose" type="button">CLOSE &times;</button>
+</section>
+
+<noscript><p style="padding:2rem;font:16px monospace">This portfolio needs JavaScript. Project list is in data/projects.json.</p></noscript>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

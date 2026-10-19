@@ -1,0 +1,22 @@
+{
+  "name": "Sidhant Sridhar",
+  "tagline": "Industrial design engineer, from concept to construction.",
+  "about": [
+    "A designer who wants to make a change in the design industry, with the aim of adding some much-needed flavour to the design space.",
+    "From disassembling broken toys as a kid to 3D printing wonders in my living room, I have always been a self-starter. My passion ignited in 6th-grade robotics club, surrounded by the first generation of Arduinos and 3D printers in India. High school clarified my joy: designing and building. Fast forward to three years in the Netherlands, and I became a workshop wizard, with a knack for rapid prototyping, metalwork, CAD, surface modelling, 3D printing and manufacturing drawings, the works.",
+    "Post-graduation, my hunger for creation intensified. My living room now houses a 3D printer, and our dining table is a bustling workbench of open electronics and wires. Microcontrollers, ESP boards and custom-designed projects have become my new frontier.",
+    "Based in the Netherlands, and on the lookout for opportunities to collaborate and create."
+  ],
+  "email": "sidhantsridhar@gmail.com",
+  "links": [
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/sidhant-sridhar-9546b6204"
+    },
+    {
+      "label": "Instagram",
+      "url": "https://instagram.com/sid_the_sloth2002"
+    }
+  ],
+  "photo": "media/about/portrait.jpg"
+}
