@@ -486,7 +486,11 @@ function startSphere() {
 let currentIdx = -1;
 let viewer = null;
 
+// A project has one model (p.model) or several (p.models: [{ model, label, up, pose, hidden }]); the first is also p.model.
+const modelsOf = (p) => (p.models?.length ? p.models : p.model ? [{ model: p.model, up: p.up, pose: p.pose, hidden: p.hidden }] : []);
+
 function disposeViewer() {
+  $('#viewer .model-nav').hidden = true;
   if (!viewer) return;
   cancelAnimationFrame(viewer.raf);
   viewer.controls.dispose();
@@ -497,12 +501,13 @@ function disposeViewer() {
 
 async function startViewer(p) {
   disposeViewer();
-  const host = $('#viewer'), cover = $('#dCover');
+  const host = $('#viewer'), cover = $('#dCover'), nav = host.querySelector('.model-nav');
   cover.hidden = true;
   host.querySelector('.viewer-hint').hidden = true;
+  const models = modelsOf(p);
   const fallbackImg = p.cover || (p.model ? `media/thumbs/${p.id}.png` : titleCard(p, currentIdx, 900).toDataURL());
   const showImg = () => { cover.src = fallbackImg; cover.hidden = false; cover.onerror = () => { cover.hidden = true; }; };
-  if (!p.model || !canSphere) { showImg(); return; }
+  if (!models.length || !canSphere) { showImg(); return; }
 
   const renderer = new THREE.WebGLRenderer({ antialias: false, alpha: true });
   const dpr = Math.min(window.devicePixelRatio || 1, 2);
@@ -517,13 +522,26 @@ async function startViewer(p) {
   const mat = createInkMaterial({ cell: 1.5 * dpr });
   const state = { renderer, controls, raf: 0 };
   viewer = state;
-  try {
-    const gltf = await loadModel(p.model);
+  let current = null, which = -1;
+  const show = async (k) => {
+    k = (k + models.length) % models.length;
+    const gltf = await loadModel(models[k].model);
     if (viewer !== state) return;
-    const root = prepareModel(gltf.scene, p, { size: 4.6 });
-    applyInk(root, mat); scene.add(root);
+    if (current) scene.remove(current);
+    current = prepareModel(gltf.scene, models[k], { size: 4.6 });
+    applyInk(current, mat); scene.add(current); which = k;
+    nav.querySelector('.mlabel').textContent = `${k + 1} / ${models.length}${models[k].label ? '  ·  ' + models[k].label.toUpperCase() : ''}`;
+  };
+  try {
+    await show(0);
+    if (viewer !== state) return;
     host.querySelector('.viewer-hint').hidden = false;
   } catch (e) { console.warn(e); if (viewer === state) { disposeViewer(); showImg(); } return; }
+  nav.hidden = models.length < 2;
+  if (models.length > 1) {
+    nav.querySelector('.mprev').onclick = () => show(which - 1).catch(console.warn);
+    nav.querySelector('.mnext').onclick = () => show(which + 1).catch(console.warn);
+  }
   const resize = () => { const w = host.clientWidth, h = host.clientHeight; renderer.setSize(w, h, false); camera.aspect = w / h; camera.updateProjectionMatrix(); mat.uniforms.uCell.value = 1.5 * renderer.getPixelRatio(); };
   resize(); state.resize = resize;
   const loop = (ms) => { state.raf = requestAnimationFrame(loop); mat.uniforms.uTime.value = ms / 1000; controls.update(); renderer.render(scene, camera); };
@@ -550,18 +568,30 @@ function openProject(i, { push = true } = {}) {
     p.links?.length ? el('div', { class: 'links' }, p.links.map((l) => el('a', { href: l.url, target: '_blank', rel: 'noopener' }, l.label + ' ↗'))) : null,
     !hasRows && p.images?.length ? el('div', { class: 'gallery' }, p.images.map((src) => el('img', { src, alt: '', loading: 'lazy', onclick: () => openLightbox(src) }))) : null,
   ].filter(Boolean));
+  // Pictures in a row fill it edge to edge: each one's width follows its aspect ratio, so no white gaps between them.
+  // A picture column shorter than the text beside it stays in view while the text scrolls, instead of leaving a blank gap under it.
+  const stickIfShort = (box) => { const top = box.getBoundingClientRect().top, h = [...box.children].reduce((mx, c) => Math.max(mx, c.getBoundingClientRect().bottom - top), 0) + 10; box.classList.toggle('stick', h < innerHeight - 80); };
+  addEventListener('resize', () => document.querySelectorAll('.rimgs').forEach(stickIfShort));
+  // (flex-grow is scaled by 100 so the factors in a row always sum past 1 and the row fills)
+  const justifiedPic = (src) => {
+    const i = el('img', { src, alt: '', onclick: () => openLightbox(src) });
+    const fit = () => { if (i.naturalWidth && i.naturalHeight) { const ar = i.naturalWidth / i.naturalHeight; i.style.flex = `${Math.round(ar * 100)} 1 ${Math.round(ar * 190)}px`; i.style.maxWidth = `${Math.round(i.naturalWidth * 1.4)}px`;   /* never blown up far past its real resolution */ requestAnimationFrame(() => i.parentElement && stickIfShort(i.parentElement)); } };
+    i.addEventListener('load', fit); if (i.complete) fit();
+    return i;
+  };
   // Rows: pictures on the left, the text they belong to on the right, in page order.
   rowsEl.replaceChildren();
   if (hasRows) {
-    const at = new Map(); (p.blocks || []).filter((bl) => bl.t === 'imgs').forEach((bl) => at.set(bl.after, [...(at.get(bl.after) || []), ...bl.srcs]));
-    const mkRow = (texts, srcs) => el('div', { class: 'row' + (texts.length ? '' : ' solo') },
-      el('div', { class: 'rimgs' + (srcs.length >= 4 ? ' cols2' : '') }, srcs.map((src) => el('img', { src, alt: '', loading: 'lazy', onclick: () => openLightbox(src) }))),
+    const at = new Map(), wideAt = new Map();   // a block marked wide gets a row of its own, full width, under the text it follows
+    (p.blocks || []).filter((bl) => bl.t === 'imgs').forEach((bl) => { const mp = bl.wide ? wideAt : at; mp.set(bl.after, [...(mp.get(bl.after) || []), ...bl.srcs]); });
+    const mkRow = (texts, srcs) => el('div', { class: 'row' + (texts.length ? (srcs.length ? '' : ' textonly') : ' solo') },
+      srcs.length ? el('div', { class: 'rimgs' }, srcs.map(justifiedPic)) : null,
       texts.length ? el('div', { class: 'rtext ink' }, el('div', { class: 'in' }, texts.map(textEl))) : null);
     const rows = []; let pending = [];
     if (at.has(-1)) rows.push(mkRow([], at.get(-1)));
     desc.forEach((t, k) => {
       pending.push(t);
-      if (at.has(k)) { rows.push(mkRow(pending, at.get(k))); pending = []; }
+      if (at.has(k) || wideAt.has(k)) { rows.push(mkRow(pending, at.get(k) || [])); pending = []; if (wideAt.has(k)) rows.push(mkRow([], wideAt.get(k))); }
     });
     if (pending.length) rows.push(el('div', { class: 'row' }, el('div', { class: 'rimgs' }), el('div', { class: 'rtext ink' }, el('div', { class: 'in' }, pending.map(textEl)))));
     rowsEl.append(...rows);
@@ -569,7 +599,7 @@ function openProject(i, { push = true } = {}) {
   $('#detail').classList.toggle('rows', hasRows);
   info.scrollTop = 0; $('#detail').scrollTop = 0;
   const sheet = $('#detail'); sheet.hidden = false;
-  requestAnimationFrame(() => sheet.classList.add('open'));
+  requestAnimationFrame(() => { sheet.classList.add('open'); });
   sphere?.setDetail(true);
   if (sphere && mode === 'sphere') sphere.focusItem(i);
   startViewer(p);

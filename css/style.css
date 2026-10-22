@@ -128,11 +128,10 @@ body:not(.booting) #loader { opacity: 0; pointer-events: none; }
 #rows { display: none; }
 .sheet.rows #rows { display: block; grid-column: 1 / -1; }
 .row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: stretch; border-top: 2px solid var(--ink); }
-.rimgs { display: grid; gap: 10px; padding: 10px; align-content: start; background: var(--paper); }
-.rimgs.cols2 { grid-template-columns: 1fr 1fr; }
-.rimgs img { width: 100%; height: auto; display: block; cursor: zoom-in; align-self: start; }
-.row.solo { grid-template-columns: 1fr; }
-.row.solo .rimgs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.rimgs { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; padding: 10px; align-content: flex-start; background: var(--paper); }
+.rimgs img { flex: 1 1 45%; min-width: 0; width: auto; height: auto; display: block; cursor: zoom-in; }
+.rimgs.stick { align-self: start; position: sticky; top: 0; }
+.row.solo, .row.textonly { grid-template-columns: 1fr; }
 .rtext { padding: 64px 36px 40px; }
 .rtext .in { position: sticky; top: 64px; }
 .rtext h3 { font: 700 30px/1 var(--display); text-transform: uppercase; letter-spacing: .03em; margin: 0 0 14px; }
@@ -142,7 +141,7 @@ body:not(.booting) #loader { opacity: 0; pointer-events: none; }
 @media (max-width: 760px) {
   .sheet.rows { grid-template-columns: 1fr; grid-template-rows: 46vh auto; }
   .sheet.rows .viewer { height: 46vh; } .sheet.rows #info { height: auto; overflow: visible; }
-  .row { grid-template-columns: 1fr; } .rtext .in { position: static; }
+  .row { grid-template-columns: 1fr; } .rtext .in { position: static; } .rimgs.stick { position: static; }
 }
 
 .ico { display: inline-block; width: 16px; height: 16px; margin-right: 7px; vertical-align: -3px; flex: none; }
@@ -196,3 +195,11 @@ body.touch button { touch-action: manipulation; }
 .step:hover { background-color: var(--yellow); }
 
 .fallback-note { flex-basis: 100%; margin: 0; padding: 8px 12px; background: var(--yellow); color: var(--ink); font-weight: 700; font-size: 12px; }
+
+/* Projects with more than one 3D model: a small switcher under the viewer. */
+.model-nav { position: absolute; left: 14px; top: 14px; display: flex; align-items: stretch; z-index: 3; }
+.model-nav[hidden] { display: none; }
+.model-nav button { width: 40px; font-size: 16px; padding: 0; cursor: pointer; background: transparent; color: inherit; border: 0; }
+.model-nav button:hover { background: var(--yellow); color: var(--ink); }
+.model-nav .mlabel { padding: 11px 14px; font-size: 11px; font-weight: 700; letter-spacing: .06em; white-space: nowrap; min-width: 96px; text-align: center; }
+@media (max-width: 760px) { .viewer-hint { display: none; } }
