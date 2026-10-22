@@ -26,9 +26,12 @@ const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
 const ease = (t) => (t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
 
 // ───────────────────────── data ─────────────────────────
+// A build stamp (written on every publish) is added to picture and model URLs, so phones and older browsers never keep showing a stale preview.
+const BUILD = await fetch('data/build.json', { cache: 'no-store' }).then((r) => r.json()).then((j) => String(j.v || '')).catch(() => '');
+const bust = (u) => (BUILD && u && !u.startsWith('data:') ? u + (u.includes('?') ? '&' : '?') + 'v=' + BUILD : u);
 const [projectsRaw, site] = await Promise.all([
-  fetch('data/projects.json').then((r) => r.json()),
-  fetch('data/site.json').then((r) => r.json()).catch(() => ({ name: 'Portfolio' })),
+  fetch('data/projects.json', { cache: 'no-cache' }).then((r) => r.json()),
+  fetch('data/site.json', { cache: 'no-cache' }).then((r) => r.json()).catch(() => ({ name: 'Portfolio' })),
 ]);
 // Order by category so each category forms a band on the sphere.
 const catOrder = [...new Set(projectsRaw.map((p) => p.category || 'Other'))];
@@ -67,7 +70,7 @@ function buildIndex() {
     ...catOrder.map((c) => el('button', { class: 'ink mode', type: 'button', onclick: () => setCat(c) }, catIcon(c), c)),
   );
   $('#grid').replaceChildren(...projects.map((p, i) => {
-    const thumb = p.cover || (p.model ? `media/thumbs/${p.id}.png` : null);
+    const thumb = bust(p.cover || (p.model ? `media/thumbs/${p.id}.png` : null));
     return el('button', { class: 'card ink', type: 'button', 'data-cat': p.category, onclick: () => openProject(i) },
       thumb ? el('img', { src: thumb, alt: '', loading: 'lazy', onerror: (e) => e.target.remove() }) : null,
       el('span', { class: 'num' }, pad(i)),
@@ -98,7 +101,7 @@ let sphere = null;
 const loader = new GLTFLoader();
 const modelCache = new Map();
 const loadModel = (url) => {
-  if (!modelCache.has(url)) modelCache.set(url, loader.loadAsync(url));
+  if (!modelCache.has(url)) modelCache.set(url, loader.loadAsync(bust(url)));
   return modelCache.get(url);
 };
 
@@ -176,7 +179,7 @@ function startSphere() {
       ph.geometry.dispose();
       const cmat = new THREE.MeshBasicMaterial({ transparent: true, side: THREE.DoubleSide, alphaMap: vignetteMap(), depthWrite: false });
       const apply = (tex) => { tex.colorSpace = THREE.SRGBColorSpace; tex.anisotropy = 4; cmat.map = tex; cmat.needsUpdate = true; };
-      const src = p.model ? `media/thumbs/${p.id}.png` : p.cover;
+      const src = bust(p.model ? `media/thumbs/${p.id}.png` : p.cover);
       if (src) new THREE.TextureLoader().load(src, apply, undefined, () => apply(new THREE.CanvasTexture(titleCard(p, i))));
       else apply(new THREE.CanvasTexture(titleCard(p, i)));
       card = new THREE.Mesh(new THREE.CircleGeometry(ITEM_SIZE / 2, 72), cmat);      // pictures float as discs, not squares
@@ -516,7 +519,7 @@ async function startViewer(p) {
     set(0); return;
   }
   const models = modelsOf(p);
-  const fallbackImg = p.cover || (p.model ? `media/thumbs/${p.id}.png` : titleCard(p, currentIdx, 900).toDataURL());
+  const fallbackImg = p.cover ? bust(p.cover) : p.model ? bust(`media/thumbs/${p.id}.png`) : titleCard(p, currentIdx, 900).toDataURL();
   const showImg = () => { cover.src = fallbackImg; cover.hidden = false; cover.onerror = () => { cover.hidden = true; }; };
   if (!models.length || !canSphere) { showImg(); return; }
 

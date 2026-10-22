@@ -611,7 +611,7 @@
     "type": "model",
     "model": "models/reamus-keder-cutting-tool.glb",
     "up": "y",
-    "cover": "media/qtents-production-tools/cover-1792435212552.jpg",
+    "cover": "",
     "images": [
       "media/qtents-production-tools/img-01.jpg",
       "media/qtents-production-tools/img-02.jpg",
