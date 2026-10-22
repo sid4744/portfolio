@@ -139,6 +139,8 @@ function glowMap() {
 function startSphere() {
   const canvas = $('#gl');
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: false, powerPreference: 'high-performance' });
+  canvas.addEventListener('webglcontextlost', (e) => e.preventDefault());       // let the browser give the context back instead of leaving the sphere blank
+  canvas.addEventListener('webglcontextrestored', () => window.dispatchEvent(new Event('resize')));
   const dpr = Math.min(window.devicePixelRatio || 1, LITE ? 1.5 : 2);
   renderer.setPixelRatio(dpr);
   renderer.setClearColor(PAPER, 1);
@@ -492,13 +494,23 @@ let viewer = null;
 // A project has one model (p.model) or several (p.models: [{ model, label, up, pose, hidden }]); the first is also p.model.
 const modelsOf = (p) => (p.models?.length ? p.models : p.model ? [{ model: p.model, up: p.up, pose: p.pose, hidden: p.hidden }] : []);
 
+let detailRenderer = null;    // created once and reused: making a new WebGL context for every project makes phones drop the oldest one, which is the sphere's
+function getDetailRenderer() {
+  if (!detailRenderer) {
+    detailRenderer = new THREE.WebGLRenderer({ antialias: false, alpha: true });
+    detailRenderer.setClearColor(0x000000, 0);
+    detailRenderer.domElement.addEventListener('webglcontextlost', (e) => e.preventDefault());
+  }
+  return detailRenderer;
+}
+
 function disposeViewer() {
   $('#viewer .model-nav').hidden = true;
   if (!viewer) return;
   cancelAnimationFrame(viewer.raf);
   viewer.controls.dispose();
-  viewer.renderer.dispose();
-  viewer.renderer.domElement.remove();
+  viewer.mat?.dispose();
+  viewer.renderer.domElement.remove();     // the renderer itself stays for the next project
   viewer = null;
 }
 
@@ -523,9 +535,9 @@ async function startViewer(p) {
   const showImg = () => { cover.src = fallbackImg; cover.hidden = false; cover.onerror = () => { cover.hidden = true; }; };
   if (!models.length || !canSphere) { showImg(); return; }
 
-  const renderer = new THREE.WebGLRenderer({ antialias: false, alpha: true });
+  const renderer = getDetailRenderer();
   const dpr = Math.min(window.devicePixelRatio || 1, 2);
-  renderer.setPixelRatio(dpr); renderer.setClearColor(0x000000, 0);
+  renderer.setPixelRatio(dpr);
   host.prepend(renderer.domElement);
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(40, 1, 0.1, 100);
@@ -534,7 +546,7 @@ async function startViewer(p) {
   controls.enableDamping = true; controls.autoRotate = true; controls.autoRotateSpeed = 1.1;
   controls.minDistance = 3; controls.maxDistance = 16; controls.enablePan = false;
   const mat = createInkMaterial({ cell: 1.5 * dpr });
-  const state = { renderer, controls, raf: 0 };
+  const state = { renderer, controls, raf: 0, mat };
   viewer = state;
   let current = null, which = -1;
   const show = async (k) => {
