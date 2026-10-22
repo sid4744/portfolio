@@ -205,3 +205,18 @@ body.touch button { touch-action: manipulation; }
 @media (max-width: 760px) { .viewer-hint { display: none; } }
 
 .viewer.gallery img { padding: 56px 24px 24px; }
+
+/* Phones: the previous/next project arrows sit with the picture at the top of the page (they scroll away with it instead of floating
+   over the text), text comes before the pictures it describes, and tall screenshots cannot take over the screen. */
+@media (max-width: 760px) {
+  .sheet .step, .sheet.rows .step { position: absolute; top: 14px; bottom: auto; width: 40px; height: 40px; font-size: 16px; }
+  .sheet .step.prev, .sheet.rows .step.prev { left: 14px; right: auto; }
+  .sheet .step.next, .sheet.rows .step.next { left: 60px; right: auto; }
+  .model-nav { top: auto; bottom: 14px; }
+  .viewer.gallery img { padding: 64px 16px 16px; }
+  .rtext { order: -1; padding: 28px 18px 8px; }
+  .rimgs img { max-height: 78vh; object-fit: contain; }
+  .info { padding: 36px 18px 28px; }
+  .sheet.rows .info { padding-bottom: 4px; }
+  .rtext { padding-top: 18px; }
+}
