@@ -203,3 +203,5 @@ body.touch button { touch-action: manipulation; }
 .model-nav button:hover { background: var(--yellow); color: var(--ink); }
 .model-nav .mlabel { padding: 11px 14px; font-size: 11px; font-weight: 700; letter-spacing: .06em; white-space: nowrap; min-width: 96px; text-align: center; }
 @media (max-width: 760px) { .viewer-hint { display: none; } }
+
+.viewer.gallery img { padding: 56px 24px 24px; }

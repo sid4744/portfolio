@@ -532,7 +532,7 @@
     "up": "y",
     "cover": "media/qtents-tensile-frames/cover-1792435186494.jpg",
     "images": [
-      "media/qtents-tensile-frames/img-01.jpg",
+      "media/qtents-tensile-frames/photo-tent.jpg",
       "media/qtents-tensile-frames/img-02.jpg",
       "media/qtents-tensile-frames/img-03.jpg",
       "media/qtents-tensile-frames/img-04.jpg",
@@ -555,7 +555,7 @@
         "t": "imgs",
         "after": -1,
         "srcs": [
-          "media/qtents-tensile-frames/img-01.jpg"
+          "media/qtents-tensile-frames/photo-tent.jpg"
         ]
       },
       {
@@ -1415,11 +1415,16 @@
     "id": "bag-webby",
     "title": "Bag Webby",
     "category": "Product",
-    "year": "2026",
+    "year": "",
     "status": "",
-    "summary": "custom 3d printed handbag",
-    "description": [],
-    "tech": [],
+    "summary": "An aesthetic handbag designed together with a friend, and 3D printed.",
+    "description": [
+      "Bag Webby is an aesthetic design project: a friend and I designed a handbag together. The whole bag was 3D printed, and the model above is what it looks like."
+    ],
+    "tech": [
+      "Fusion 360",
+      "3D printing"
+    ],
     "type": "model",
     "model": "models/bag-webby.glb",
     "up": "y",
@@ -1429,13 +1434,17 @@
   },
   {
     "id": "rope-holder-thingy",
-    "title": "rope holder thingy",
+    "title": "Rope Holder",
     "category": "Mechanical",
-    "year": "2026",
+    "year": "",
     "status": "",
-    "summary": "",
-    "description": [],
-    "tech": [],
+    "summary": "A highly specific tool for pulling a rope without winding it around your hands.",
+    "description": [
+      "This is a very specific tool, designed to pull a piece of rope in a particular way. It lets you keep a firm grip on the rope and slide along it while you pull, without the rope winding up or digging into your hands."
+    ],
+    "tech": [
+      "Fusion 360"
+    ],
     "type": "model",
     "model": "models/rope-holder-thingy.glb",
     "up": "y",
@@ -1444,30 +1453,18 @@
     "links": []
   },
   {
-    "id": "roller-handle",
-    "title": "roller handle",
-    "category": "Mechanical",
-    "year": "2026",
-    "status": "",
-    "summary": "",
-    "description": [],
-    "tech": [],
-    "type": "model",
-    "model": "models/roller-handle.glb",
-    "up": "y",
-    "cover": "",
-    "images": [],
-    "links": []
-  },
-  {
     "id": "lights-stand",
-    "title": "lights stand",
+    "title": "Standing Lamp Base",
     "category": "Product",
-    "year": "2026",
+    "year": "",
     "status": "",
-    "summary": "",
-    "description": [],
-    "tech": [],
+    "summary": "A base I designed to turn a thrift-store ceiling light into a standing lamp.",
+    "description": [
+      "I found a lamp at a thrift store. It was an overhead light with a tube light inside, and I wanted to turn it into a standing lamp. This is the base I designed for it."
+    ],
+    "tech": [
+      "Fusion 360"
+    ],
     "type": "model",
     "model": "models/lights-stand.glb",
     "up": "y",
@@ -1483,13 +1480,17 @@
   },
   {
     "id": "plug-v1",
-    "title": "plug v1",
+    "title": "Plug",
     "category": "Tools",
-    "year": "2026",
+    "year": "",
     "status": "",
-    "summary": "",
-    "description": [],
-    "tech": [],
+    "summary": "A plug for the top of a water jet drilling system that seals it as airtight as possible while still letting pipes pass through.",
+    "description": [
+      "This is a plug I designed for the top of a water jet drilling system. It covers the top of the pipe and still has to let other pipes pass in and out, while keeping the connection as airtight as possible, so it has openings shaped for those pipes. To seal it, you hammer or mallet the whole plug into place."
+    ],
+    "tech": [
+      "Fusion 360"
+    ],
     "type": "model",
     "model": "models/plug-v1.glb",
     "up": "y",
@@ -1499,13 +1500,24 @@
   },
   {
     "id": "phone-2ace",
-    "title": "phone 2ace",
+    "title": "Nothing Phone (2a) Community Edition",
     "category": "Product",
-    "year": "2026",
+    "year": "",
     "status": "",
-    "summary": "",
-    "description": [],
-    "tech": [],
+    "summary": "A retro-tech design variant of the Nothing Phone (2a), made for a design contest: yellowed beige plastic with pops of orange.",
+    "description": [
+      "## The brief",
+      "For a design contest, I designed a new design variant of the Nothing Phone (2a).",
+      "## Retro tech",
+      "The idea was to be inspired by retro tech, which is why the phone has a yellowed, beige plastic colour with pops of orange.",
+      "## The model",
+      "The pictures show the 3D model I came up with: the beige and grey panels behind the transparent-style back, and a close-up of an orange button against the cream frame."
+    ],
+    "tech": [
+      "Product design",
+      "CMF",
+      "3D rendering"
+    ],
     "type": "model",
     "model": "models/phone-2ace.glb",
     "up": "y",
@@ -1513,50 +1525,105 @@
     "images": [
       "media/phone-2ace/img-01.jpg",
       "media/phone-2ace/img-02.jpg",
-      "media/phone-2ace/img-03.jpg",
-      "media/phone-2ace/img-05.jpg",
-      "media/phone-2ace/img-06.jpg"
+      "media/phone-2ace/img-03.jpg"
     ],
     "links": [],
     "blocks": [
       {
         "t": "imgs",
-        "after": -1,
+        "after": 1,
         "srcs": [
           "media/phone-2ace/img-01.jpg",
-          "media/phone-2ace/img-02.jpg",
-          "media/phone-2ace/img-03.jpg",
-          "media/phone-2ace/img-05.jpg",
-          "media/phone-2ace/img-06.jpg"
+          "media/phone-2ace/img-02.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 5,
+        "srcs": [
+          "media/phone-2ace/img-03.jpg"
         ]
       }
     ]
   },
   {
     "id": "nozzles",
-    "title": "nozzles",
+    "title": "Water Jet Nozzles",
     "category": "Mechanical",
-    "year": "2026",
-    "status": "",
-    "summary": "",
-    "description": [],
-    "tech": [],
+    "year": "2023",
+    "status": "Prototyped",
+    "summary": "Nozzles for a water jet drilling system, prototyped in many geometries and printed with FDM, SLS and MJF.",
+    "description": [
+      "## Nozzles for water jet drilling",
+      "These nozzles were designed for the water jet drilling system I worked on at the geothermal heating company, the same project as the peristaltic pump.",
+      "## Many prototypes",
+      "Getting a nozzle to behave the way you want takes a lot of iteration. I made many prototypes in all sorts of geometries and printed them with FDM, SLS and MJF.",
+      "## What the models show",
+      "The first model, nozzles v2, is a segmented nozzle housing in a collar and mounting ring, shown with its loose parts laid out beside it. The second, nozzles, is the earlier set of nozzle heads lined up together, each a different geometry: ribbed and spiral-grooved bodies, domed heads, threaded bases and a hollow tube."
+    ],
+    "tech": [
+      "Fusion 360",
+      "Rhino",
+      "SolidWorks",
+      "3D printing",
+      "FDM",
+      "SLS",
+      "MJF"
+    ],
     "type": "model",
-    "model": "models/nozzles.glb",
+    "model": "models/nozzles-v2.glb",
     "up": "y",
     "cover": "",
     "images": [],
-    "links": []
+    "links": [],
+    "models": [
+      {
+        "model": "models/nozzles-v2.glb",
+        "up": "y",
+        "hidden": [
+          2,
+          3,
+          4
+        ],
+        "pose": [
+          0.007445,
+          -0.775784,
+          -0.171263,
+          0.607267
+        ],
+        "label": "Nozzles v2"
+      },
+      {
+        "model": "models/nozzles.glb",
+        "up": "y",
+        "label": "Nozzles"
+      }
+    ],
+    "hidden": [
+      2,
+      3,
+      4
+    ],
+    "pose": [
+      0.007445,
+      -0.775784,
+      -0.171263,
+      0.607267
+    ]
   },
   {
     "id": "bicycle-chain-guard",
-    "title": "bicycle chain guard",
+    "title": "Bicycle Chain Guard",
     "category": "Tools",
-    "year": "2026",
+    "year": "",
     "status": "",
-    "summary": "",
-    "description": [],
-    "tech": [],
+    "summary": "A simple chain guard for my fixie, so my trousers stop getting caught in the chain.",
+    "description": [
+      "A simple chain guard that I designed for my bike. It is a fixie, and my trousers kept getting stuck in the chain. This is the fifth or sixth version of the design, and the one that has worked best for me."
+    ],
+    "tech": [
+      "Fusion 360"
+    ],
     "type": "model",
     "model": "models/bicycle-chain-guard.glb",
     "up": "y",
@@ -1571,33 +1638,6 @@
     ]
   },
   {
-    "id": "nozzles-v2",
-    "title": "nozzles v2",
-    "category": "Mechanical",
-    "year": "2026",
-    "status": "",
-    "summary": "",
-    "description": [],
-    "tech": [],
-    "type": "model",
-    "model": "models/nozzles-v2.glb",
-    "up": "y",
-    "cover": "",
-    "images": [],
-    "links": [],
-    "hidden": [
-      2,
-      3,
-      4
-    ],
-    "pose": [
-      0.007445,
-      -0.775784,
-      -0.171263,
-      0.607267
-    ]
-  },
-  {
     "id": "qtents-metal-components",
     "title": "Metal Components for Mass Production",
     "category": "Tensile Structures",
@@ -1605,10 +1645,14 @@
     "status": "shipped",
     "summary": "Brackets, connectors and fittings, taken from design to production with manufacturers on three continents.",
     "description": [
+      "## Iterating in Rhino and Grasshopper",
+      "Rhino and Grasshopper make it very easy to iterate on the geometry of these metal structures, and on the connecting elements that join them. I could walk through different section sizes of steel and other materials quickly, and see how each choice changed the design.",
       "Besides the main tent work I designed many of the surrounding metal components: brackets, connectors, the parts that hold everything together. I worked through the full process: initial design, 3D printed prototypes, small-scale manufacturing runs to validate geometry, and then production relationships with manufacturers in China, India, Sri Lanka and various European countries, covering finishes, colour variants and material choices.",
       "I worked with metal manufacturers in China, standard parts suppliers across Europe and textile manufacturers in India and Sri Lanka, and with manufacturers within Europe for prototyping and smaller runs."
     ],
     "tech": [
+      "Rhino",
+      "Grasshopper",
       "CAD",
       "3D printing",
       "DFM",
@@ -1630,15 +1674,13 @@
       "media/qtents-metal-components/img-08.jpg",
       "media/qtents-metal-components/img-09.jpg",
       "media/qtents-metal-components/img-10.jpg",
-      "media/qtents-metal-components/img-11.jpg",
-      "media/qtents-metal-components/img-12.jpg",
-      "media/qtents-metal-components/img-13.jpg"
+      "media/qtents-metal-components/img-11.jpg"
     ],
     "links": [],
     "blocks": [
       {
         "t": "imgs",
-        "after": 0,
+        "after": 2,
         "srcs": [
           "media/qtents-metal-components/img-01.jpg",
           "media/qtents-metal-components/img-02.jpg",
@@ -1649,16 +1691,14 @@
       },
       {
         "t": "imgs",
-        "after": 1,
+        "after": 3,
         "srcs": [
           "media/qtents-metal-components/img-06.jpg",
           "media/qtents-metal-components/img-07.jpg",
           "media/qtents-metal-components/img-08.jpg",
           "media/qtents-metal-components/img-09.jpg",
           "media/qtents-metal-components/img-10.jpg",
-          "media/qtents-metal-components/img-11.jpg",
-          "media/qtents-metal-components/img-12.jpg",
-          "media/qtents-metal-components/img-13.jpg"
+          "media/qtents-metal-components/img-11.jpg"
         ]
       }
     ]
@@ -1750,68 +1790,6 @@
     ]
   },
   {
-    "id": "traffic-light-lamps",
-    "title": "Junkyard Traffic Lights → Smart Lamps",
-    "category": "Product",
-    "year": "",
-    "status": "built",
-    "summary": "Traffic lights rescued from a junkyard and converted into smart lamps.",
-    "description": [],
-    "tech": [
-      "Electronics",
-      "Microcontrollers"
-    ],
-    "type": "image",
-    "model": "",
-    "up": "y",
-    "cover": "media/traffic-light-lamps/cover.jpg",
-    "images": [
-      "media/traffic-light-lamps/img-01.jpg",
-      "media/traffic-light-lamps/img-02.jpg"
-    ],
-    "links": [],
-    "blocks": [
-      {
-        "t": "imgs",
-        "after": -1,
-        "srcs": [
-          "media/traffic-light-lamps/img-01.jpg",
-          "media/traffic-light-lamps/img-02.jpg"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "trashboxone",
-    "title": "TrashBoxOne: Shoebox Bluetooth Speaker",
-    "category": "Product",
-    "year": "",
-    "status": "built",
-    "summary": "A Bluetooth speaker built into a shoebox.",
-    "description": [],
-    "tech": [
-      "Electronics",
-      "Audio"
-    ],
-    "type": "image",
-    "model": "",
-    "up": "y",
-    "cover": "media/trashboxone/cover.jpg",
-    "images": [
-      "media/trashboxone/img-01.jpg"
-    ],
-    "links": [],
-    "blocks": [
-      {
-        "t": "imgs",
-        "after": -1,
-        "srcs": [
-          "media/trashboxone/img-01.jpg"
-        ]
-      }
-    ]
-  },
-  {
     "id": "powerbase",
     "title": "PowerBase",
     "category": "Product",
@@ -1843,7 +1821,6 @@
       "media/powerbase/img-06.jpg",
       "media/powerbase/img-07.jpg",
       "media/powerbase/img-08.jpg",
-      "media/powerbase/img-09.jpg",
       "media/powerbase/img-10.jpg",
       "media/powerbase/img-11.jpg",
       "media/powerbase/img-12.jpg"
@@ -1867,8 +1844,7 @@
           "media/powerbase/img-05.jpg",
           "media/powerbase/img-06.jpg",
           "media/powerbase/img-07.jpg",
-          "media/powerbase/img-08.jpg",
-          "media/powerbase/img-09.jpg"
+          "media/powerbase/img-08.jpg"
         ]
       },
       {
@@ -2089,48 +2065,29 @@
     ]
   },
   {
-    "id": "crt-music-visualiser",
-    "title": "CRT Music Visualiser",
-    "category": "Product",
-    "year": "",
-    "status": "built",
-    "summary": "A CRT turned into an oscilloscope-style visualiser running on music signals, next to a Spotify-connected 70s amp and early-2000s speakers.",
-    "description": [
-      "A CRT visualiser running on music signals from my shoebox Bluetooth speaker, part of a Spotify-integrated home theatre powered by a 1970s amplifier and early-2000s speakers."
-    ],
-    "tech": [
-      "Electronics",
-      "Audio",
-      "Analogue display"
-    ],
-    "type": "image",
-    "model": "",
-    "up": "y",
-    "cover": "media/crt-music-visualiser/cover.jpg",
-    "images": [
-      "media/crt-music-visualiser/img-01.jpg"
-    ],
-    "links": [],
-    "blocks": [
-      {
-        "t": "imgs",
-        "after": 0,
-        "srcs": [
-          "media/crt-music-visualiser/img-01.jpg"
-        ]
-      }
-    ]
-  },
-  {
     "id": "older-projects",
     "title": "Older Projects",
     "category": "Product",
     "year": "",
     "status": "archive",
-    "summary": "A selection of earlier design and concept projects: vehicles, scooters and accessories.",
-    "description": [],
+    "summary": "A selection of earlier projects: concept vehicles, scooters and accessories, plus electronics experiments like a shoebox speaker, a CRT music visualiser and junkyard traffic lights turned into lamps.",
+    "description": [
+      "A selection of earlier projects: concept designs, and some electronics experiments.",
+      "## Concept designs",
+      "Earlier design and concept projects: vehicles, scooters and accessories.",
+      "## TrashBoxOne: shoebox Bluetooth speaker",
+      "A Bluetooth speaker built into a shoebox.",
+      "## CRT music visualiser",
+      "A CRT visualiser running on music signals from my shoebox Bluetooth speaker, part of a Spotify-integrated home theatre powered by a 1970s amplifier and early-2000s speakers.",
+      "## Junkyard traffic lights → smart lamps",
+      "Traffic lights rescued from a junkyard and converted into smart lamps."
+    ],
     "tech": [
-      "Concept design"
+      "Concept design",
+      "Electronics",
+      "Audio",
+      "Microcontrollers",
+      "Analogue display"
     ],
     "type": "image",
     "model": "",
@@ -2142,13 +2099,17 @@
       "media/older-projects/img-03.jpg",
       "media/older-projects/img-04.jpg",
       "media/older-projects/img-05.jpg",
-      "media/older-projects/img-06.jpg"
+      "media/older-projects/img-06.jpg",
+      "media/trashboxone/img-01.jpg",
+      "media/crt-music-visualiser/img-01.jpg",
+      "media/traffic-light-lamps/img-01.jpg",
+      "media/traffic-light-lamps/img-02.jpg"
     ],
     "links": [],
     "blocks": [
       {
         "t": "imgs",
-        "after": -1,
+        "after": 2,
         "srcs": [
           "media/older-projects/img-01.jpg",
           "media/older-projects/img-02.jpg",
@@ -2156,6 +2117,28 @@
           "media/older-projects/img-04.jpg",
           "media/older-projects/img-05.jpg",
           "media/older-projects/img-06.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 4,
+        "srcs": [
+          "media/trashboxone/img-01.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 6,
+        "srcs": [
+          "media/crt-music-visualiser/img-01.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 8,
+        "srcs": [
+          "media/traffic-light-lamps/img-01.jpg",
+          "media/traffic-light-lamps/img-02.jpg"
         ]
       }
     ]
@@ -2165,9 +2148,11 @@
     "title": "Graphic Design",
     "category": "Product",
     "year": "",
-    "status": "ongoing",
-    "summary": "Posters and graphic experiments.",
-    "description": [],
+    "status": "",
+    "summary": "Graphic design projects I have done over time: posters, digital content and other pieces.",
+    "description": [
+      "These are some graphic design projects that I have done over time. Some of them are posters, some are digital content, and some are various other things."
+    ],
     "tech": [
       "Graphic design"
     ],
@@ -2175,31 +2160,33 @@
     "model": "",
     "up": "y",
     "cover": "media/graphic-design/cover-1792434135689.jpg",
-    "images": [
-      "media/graphic-design/img-01.jpg",
-      "media/graphic-design/img-02.jpg",
-      "media/graphic-design/img-03.jpg",
-      "media/graphic-design/img-04.jpg",
-      "media/graphic-design/img-05.jpg",
-      "media/graphic-design/img-06.jpg",
-      "media/graphic-design/img-07.jpg",
-      "media/graphic-design/img-08.jpg"
-    ],
+    "images": [],
     "links": [],
-    "blocks": [
+    "blocks": [],
+    "gallery": [
       {
-        "t": "imgs",
-        "after": -1,
-        "srcs": [
-          "media/graphic-design/img-01.jpg",
-          "media/graphic-design/img-02.jpg",
-          "media/graphic-design/img-03.jpg",
-          "media/graphic-design/img-04.jpg",
-          "media/graphic-design/img-05.jpg",
-          "media/graphic-design/img-06.jpg",
-          "media/graphic-design/img-07.jpg",
-          "media/graphic-design/img-08.jpg"
-        ]
+        "src": "media/graphic-design/img-01.jpg"
+      },
+      {
+        "src": "media/graphic-design/img-02.jpg"
+      },
+      {
+        "src": "media/graphic-design/img-03.jpg"
+      },
+      {
+        "src": "media/graphic-design/img-04.jpg"
+      },
+      {
+        "src": "media/graphic-design/img-05.jpg"
+      },
+      {
+        "src": "media/graphic-design/img-06.jpg"
+      },
+      {
+        "src": "media/graphic-design/img-07.jpg"
+      },
+      {
+        "src": "media/graphic-design/img-08.jpg"
       }
     ]
   }

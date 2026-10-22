@@ -504,6 +504,17 @@ async function startViewer(p) {
   const host = $('#viewer'), cover = $('#dCover'), nav = host.querySelector('.model-nav');
   cover.hidden = true;
   host.querySelector('.viewer-hint').hidden = true;
+  host.classList.toggle('gallery', !!p.gallery?.length);
+  if (p.gallery?.length) {       // a gallery project: one large picture at a time, switched with the arrows
+    const g = p.gallery; let k = 0;
+    const set = (n) => {
+      k = (n + g.length) % g.length; cover.hidden = false; cover.src = g[k].src; cover.alt = g[k].label || '';
+      nav.querySelector('.mlabel').textContent = `${k + 1} / ${g.length}${g[k].label ? '  ·  ' + g[k].label.toUpperCase() : ''}`;
+      g.forEach((_, j) => { if (Math.abs(j - k) === 1 || (g.length > 2 && (j - k + g.length) % g.length === 1)) { const pre = new Image(); pre.src = g[j].src; } });
+    };
+    nav.hidden = g.length < 2; nav.querySelector('.mprev').onclick = () => set(k - 1); nav.querySelector('.mnext').onclick = () => set(k + 1);
+    set(0); return;
+  }
   const models = modelsOf(p);
   const fallbackImg = p.cover || (p.model ? `media/thumbs/${p.id}.png` : titleCard(p, currentIdx, 900).toDataURL());
   const showImg = () => { cover.src = fallbackImg; cover.hidden = false; cover.onerror = () => { cover.hidden = true; }; };
@@ -566,7 +577,7 @@ function openProject(i, { push = true } = {}) {
     el('dl', {}, ...row('Year', p.year), ...row('Status', p.status), ...row('Category', p.category)),
     p.tech?.length ? el('ul', { class: 'tags' }, p.tech.map((t) => el('li', {}, t))) : null,
     p.links?.length ? el('div', { class: 'links' }, p.links.map((l) => el('a', { href: l.url, target: '_blank', rel: 'noopener' }, l.label + ' ↗'))) : null,
-    !hasRows && p.images?.length ? el('div', { class: 'gallery' }, p.images.map((src) => el('img', { src, alt: '', loading: 'lazy', onclick: () => openLightbox(src) }))) : null,
+    !hasRows && !p.gallery?.length && p.images?.length ? el('div', { class: 'gallery' }, p.images.map((src) => el('img', { src, alt: '', loading: 'lazy', onclick: () => openLightbox(src) }))) : null,
   ].filter(Boolean));
   // Pictures in a row fill it edge to edge: each one's width follows its aspect ratio, so no white gaps between them.
   // A picture column shorter than the text beside it stays in view while the text scrolls, instead of leaving a blank gap under it.
