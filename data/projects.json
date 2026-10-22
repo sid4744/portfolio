@@ -1,13 +1,21 @@
 [
   {
     "id": "1-0-drivetrain4v",
-    "title": "Drivetrain 1.0 (4V)",
+    "title": "Steering System and Vehicle Dynamics",
     "category": "Vehicles",
     "year": "",
-    "status": "model",
-    "summary": "Fusion 360 design. Description to be added.",
-    "description": [],
+    "status": "Formula Student",
+    "summary": "The steering system for our Formula Student car, designed alongside the vehicle dynamics team so it stayed clear of the drivetrain.",
+    "description": [
+      "I was on a Formula Student team, and I was personally responsible for designing the car's entire steering system.",
+      "## Working with Vehicle Dynamics",
+      "I worked inside the Vehicle Dynamics team, six of us in total. While the rest of the team was developing the drivetrain, my job was to make sure nothing in it collided or interfered with the steering system as I designed it.",
+      "That meant checking clearances between the two systems throughout the design, and I also helped with smaller parts of the drivetrain design itself.",
+      "## Tools",
+      "The design was done in SolidWorks and Fusion 360."
+    ],
     "tech": [
+      "SolidWorks",
       "Fusion 360"
     ],
     "type": "model",
@@ -15,38 +23,23 @@
     "up": "y",
     "cover": "",
     "images": [],
-    "links": [],
-    "draft": true
-  },
-  {
-    "id": "air-scoop-left-and-right",
-    "title": "Air Scoops, Left & Right",
-    "category": "Vehicles",
-    "year": "",
-    "status": "model",
-    "summary": "Fusion 360 design. Description to be added.",
-    "description": [],
-    "tech": [
-      "Fusion 360"
-    ],
-    "type": "model",
-    "model": "models/air-scoop-left-and-right.glb",
-    "up": "y",
-    "cover": "",
-    "images": [],
-    "links": [],
-    "draft": true
+    "links": []
   },
   {
     "id": "rear-difuser-audi-tt-mk1",
     "title": "Rear Diffuser, Audi TT Mk1",
     "category": "Vehicles",
     "year": "",
-    "status": "model",
-    "summary": "Fusion 360 design. Description to be added.",
-    "description": [],
+    "status": "Designed",
+    "summary": "A new rear diffuser for my Audi TT, designed in Fusion 360 starting from a 3D scan of the car.",
+    "description": [
+      "I wanted a new rear diffuser for my Audi TT, so I started by 3D scanning the car and designed the whole part in Fusion 360 around that scan.",
+      "## Iterating on the design",
+      "From there it was a matter of iteration: working out the right size for the diffuser and how many fins it should have. This model is the final design that came out of that process."
+    ],
     "tech": [
-      "Fusion 360"
+      "Fusion 360",
+      "3D scanning"
     ],
     "type": "model",
     "model": "models/rear-difuser-audi-tt-mk1.glb",
@@ -54,7 +47,6 @@
     "cover": "",
     "images": [],
     "links": [],
-    "draft": true,
     "pose": [
       0.051759,
       -0.187233,
@@ -63,34 +55,90 @@
     ]
   },
   {
+    "id": "air-scoop-left-and-right",
+    "title": "Window Vents",
+    "category": "Vehicles",
+    "year": "",
+    "status": "Built and tested",
+    "summary": "A pair of window scoops that route cool outside air into a car that has no air conditioning, even with the window nearly closed.",
+    "description": [
+      "My convertible has no air conditioning, and on a hot day, or when it is raining and the windows have to stay shut, the cabin just heats up. I designed these two 3D-printed air scoops, left and right, in Fusion 360 to fix that.",
+      "## How it works",
+      "Each scoop catches the fast, cooler air outside the car and channels it through a small gap at the top of the window, straight into the cabin and onto you.",
+      "It is held in place by the window itself: you wind the window up and it jams the scoop into the slot, and a small clip keeps it seated.",
+      "## Result",
+      "It works well. I have driven with them up to about 150 km/h without any problem, and for a car without AC it is the one solution that gives airflow with the window almost closed."
+    ],
+    "tech": [
+      "Fusion 360",
+      "3D printing"
+    ],
+    "type": "model",
+    "model": "models/air-scoop-left-and-right.glb",
+    "up": "y",
+    "cover": "",
+    "images": [],
+    "links": []
+  },
+  {
     "id": "peristalticpump-nemaxx-parametric-v85",
-    "title": "Peristaltic Pump (NEMA, parametric)",
+    "title": "Parametric Peristaltic Pump",
     "category": "Mechanical",
     "year": "",
-    "status": "model",
-    "summary": "Fusion 360 design. Description to be added.",
-    "description": [],
+    "status": "Built and tested",
+    "summary": "A fully parametric peristaltic pump designed in Fusion 360 to meter a viscous fluid at exact rates for a geothermal water-jet drilling system.",
+    "description": [
+      "While working at a company that builds geothermal heating solutions for homes, I was part of a team developing a water-jet drilling system. It needed to carry a specific viscous fluid down the hole in very precise quantities and at very precise rates.",
+      "## A parametric pump",
+      "The most practical way to get that control was a peristaltic pump, so I modelled one fully parametrically in Fusion 360. That made the design easy to retune: tube size, the volume displaced per stroke, the number of strokes per rotation and other values are all parameters I could change in one place.",
+      "## Result",
+      "This is the final pump design I arrived at, and it worked well. The photos show the printed pump, driven by a power drill."
+    ],
     "tech": [
-      "Fusion 360"
+      "Fusion 360",
+      "Parametric design",
+      "3D printing"
     ],
     "type": "model",
     "model": "models/peristalticpump-nemaxx-parametric-v85.glb",
     "up": "y",
     "cover": "",
-    "images": [],
+    "images": [
+      "media/peristaltic-pump/img-01.jpg",
+      "media/peristaltic-pump/img-02.jpg"
+    ],
     "links": [],
-    "draft": true
+    "blocks": [
+      {
+        "t": "imgs",
+        "after": -1,
+        "srcs": [
+          "media/peristaltic-pump/img-01.jpg",
+          "media/peristaltic-pump/img-02.jpg"
+        ]
+      }
+    ]
   },
   {
     "id": "paramteric-scotch-v2",
-    "title": "Parametric Scotch Yoke v2",
+    "title": "Parametric Scotch Yoke",
     "category": "Mechanical",
     "year": "",
-    "status": "model",
-    "summary": "Fusion 360 design. Description to be added.",
-    "description": [],
+    "status": "Built and tested",
+    "summary": "A parametric scotch yoke mechanism in Fusion 360 that turns a motor's rotation into precisely timed back-and-forth motion for a glass artist's installation.",
+    "description": [
+      "A friend of mine is an artist who works with glass. For one of her installations a bar had to move back and forth with very precise timing and an adjustable range of motion. I designed the mechanism for it.",
+      "## Why a scotch yoke",
+      "The job was to turn the rotation of a motor into linear back-and-forth motion, and a scotch yoke was the mechanism I chose for it.",
+      "## Parametric motion",
+      "I built it parametrically in Fusion 360, so the range of motion is adjustable, and so is the character of the movement: from a juddering, shuddering motion, to a staggered one, to a very smooth one.",
+      "## Testing",
+      "We tested a lot. To work out the right sizing before committing to bought parts, I 3D printed the linear rails myself, and we also ran durability tests on the mechanism."
+    ],
     "tech": [
-      "Fusion 360"
+      "Fusion 360",
+      "Parametric design",
+      "3D printing"
     ],
     "type": "model",
     "model": "models/paramteric-scotch-v2.glb",
@@ -98,7 +146,6 @@
     "cover": "",
     "images": [],
     "links": [],
-    "draft": true,
     "hidden": [
       2
     ],
@@ -114,11 +161,18 @@
     "title": "Tameboy",
     "category": "Product",
     "year": "",
-    "status": "model",
-    "summary": "A smartphone gameboy, dubbed the Tameboy.",
-    "description": [],
+    "status": "Built",
+    "summary": "A smartphone Game Boy attachment, dubbed the Tameboy.",
+    "description": [
+      "I wanted a simple attachment for my phone that would let me play emulator and retro games anywhere.",
+      "I bought a cheap Bluetooth controller from 8BitDo and modelled a custom housing for it in Fusion 360, one that slots my phone in perfectly.",
+      "## Tameboy V2",
+      "I later made newer versions, called Tameboy V2, which use the MagSafe ring on the back of the phone to attach magnetically. That is the direction the product is developing in, and the latest version is the one in the pictures."
+    ],
     "tech": [
-      "Fusion 360"
+      "Fusion 360",
+      "3D printing",
+      "MagSafe"
     ],
     "type": "model",
     "model": "models/tameboyv2.glb",
@@ -132,16 +186,21 @@
       "media/tameboyv2/img-05.jpg"
     ],
     "links": [],
-    "draft": true,
     "blocks": [
       {
         "t": "imgs",
-        "after": -1,
+        "after": 1,
         "srcs": [
           "media/tameboyv2/img-01.jpg",
+          "media/tameboyv2/img-04.jpg"
+        ]
+      },
+      {
+        "t": "imgs",
+        "after": 3,
+        "srcs": [
           "media/tameboyv2/img-02.jpg",
           "media/tameboyv2/img-03.jpg",
-          "media/tameboyv2/img-04.jpg",
           "media/tameboyv2/img-05.jpg"
         ]
       }
@@ -155,14 +214,18 @@
   },
   {
     "id": "organizer",
-    "title": "Organizer",
+    "title": "Desk Drawer Organizer",
     "category": "Product",
     "year": "",
-    "status": "model",
-    "summary": "Fusion 360 design. Description to be added.",
-    "description": [],
+    "status": "Personal project",
+    "summary": "A personal organizer with a dedicated slot for each thing I own, sized to fit exactly in my drawer.",
+    "description": [
+      "A simple personal project: an organizer made specifically for the things I own, with a dedicated slot for each one, sized to fit the drawer it lives in.",
+      "There are slots for my ruler, my calculator, my power bank, my ID and business cards, and a lot more. I modelled it in Fusion 360, and because it is built somewhat parametrically, the slots and overall size are easy to adjust."
+    ],
     "tech": [
-      "Fusion 360"
+      "Fusion 360",
+      "Parametric design"
     ],
     "type": "model",
     "model": "models/organizer.glb",
@@ -170,7 +233,6 @@
     "cover": "",
     "images": [],
     "links": [],
-    "draft": true,
     "pose": [
       0,
       0,
@@ -183,9 +245,15 @@
     "title": "Blob Lamp",
     "category": "Product",
     "year": "",
-    "status": "model",
-    "summary": "Fusion 360 design. Description to be added.",
-    "description": [],
+    "status": "Design concept",
+    "summary": "A ceiling light inspired by cell division, with lamp blobs splitting away from a central form.",
+    "description": [
+      "The Blob Lamp is an aesthetic overhead light, designed in Fusion 360 as a ceiling light.",
+      "## Inspiration",
+      "It is inspired by cell division: several rounded forms splitting away from a central one, the way a cell divides.",
+      "## Status",
+      "This is the initial design. I have not printed it, installed it or tested it yet."
+    ],
     "tech": [
       "Fusion 360"
     ],
@@ -195,7 +263,6 @@
     "cover": "",
     "images": [],
     "links": [],
-    "draft": true,
     "pose": [
       0.707107,
       0,
@@ -208,30 +275,45 @@
     "title": "The Perfect Buckle v25",
     "category": "Product",
     "year": "",
-    "status": "model",
-    "summary": "Fusion 360 design. Description to be added.",
-    "description": [],
+    "status": "In ongoing testing",
+    "summary": "A parametric buckle, now on version 25, built to replace the closure on a World War II Dutch Army messenger bag.",
+    "description": [
+      "This is version 25 of what I call, in my opinion, the perfect buckle. It was made for one specific use.",
+      "## The bag",
+      "I bought a World War II Dutch Army backpack-style messenger bag with a very odd closing mechanism. It did come with straps, though, so I repurposed them by putting a buckle on each side, which gives the bag a proper buckle closure.",
+      "## Always improving",
+      "I modelled the buckle in Fusion 360 as a parametric file, so every dimension is easy to change. This is the latest version. I am still testing it every time I use the bag, and I update it as things break, get better or worse, or I think of new features to add."
+    ],
     "tech": [
-      "Fusion 360"
+      "Fusion 360",
+      "Parametric design"
     ],
     "type": "model",
     "model": "models/theperfectbuckle-v25.glb",
     "up": "y",
     "cover": "",
     "images": [],
-    "links": [],
-    "draft": true
+    "links": []
   },
   {
     "id": "phonecasev21",
-    "title": "Phone Case v21",
+    "title": "Worst Case Scenario v21",
     "category": "Product",
     "year": "",
-    "status": "model",
-    "summary": "Fusion 360 design. Description to be added.",
-    "description": [],
+    "status": "In ongoing testing",
+    "summary": "A 3D-printed TPU bumper case for my phone, now on its 21st version, with a kickstand and tripod mount.",
+    "description": [
+      "Worst Case Scenario is the phone case I keep making for my own phone, and this is version 21. Like the buckle, it is a project that is never really finished: I keep testing it and making new versions.",
+      "## The case",
+      "It is a bumper case. The front and back stay fully exposed, and big bumpers around the sides keep the glass from touching the surface if the phone is dropped.",
+      "It is printed at home in flexible 95A TPU, and it went through many versions to get the fit and sizing I wanted.",
+      "## Extra features",
+      "Along the way I added a kickstand and a tripod mount with embedded hardware. This is the version I am currently on."
+    ],
     "tech": [
-      "Fusion 360"
+      "Fusion 360",
+      "3D printing",
+      "TPU 95A"
     ],
     "type": "model",
     "model": "models/phonecasev21.glb",
@@ -239,7 +321,6 @@
     "cover": "",
     "images": [],
     "links": [],
-    "draft": true,
     "pose": [
       -0.163201,
       -0.963374,
@@ -252,36 +333,64 @@
     "title": "Keder Cutting Tool",
     "category": "Tools",
     "year": "",
-    "status": "model",
-    "summary": "Fusion 360 design. Description to be added.",
-    "description": [],
+    "status": "In production use",
+    "summary": "A 3D-printed tool for the production team that cuts a strip of an exact width out of a much wider strip, as long as you keep pulling.",
+    "description": [
+      "This is one of the tools I made for the production team at my current workplace. Production involves a lot of very specific, repetitive tasks, and a purpose-made tool saves labour and gives more repeatable results than doing them by hand.",
+      "## How it works",
+      "The tool cuts a strip of one exact width out of a keder profile that starts out much wider. You feed the profile through the tool, and a razor blade inside does the cutting. Press the blade with a finger so there is enough load to engage it, then pull the other end of the profile through the mechanism.",
+      "As you keep pulling, the blade keeps cutting, and you get one long strip of exactly the width you want, every time.",
+      "## One of many",
+      "It is a black 3D-printed part and looks very much like the model above. It is one of many tools of this kind that I have made for the production team."
+    ],
     "tech": [
-      "Fusion 360"
+      "Fusion 360",
+      "3D printing"
     ],
     "type": "model",
     "model": "models/reamus-keder-cutting-tool.glb",
     "up": "y",
     "cover": "",
-    "images": [],
+    "images": [
+      "media/keder-cutting-tool/img-01.jpg"
+    ],
     "links": [],
-    "draft": true,
     "pose": [
       0.707107,
       0,
       0,
       0.707107
+    ],
+    "blocks": [
+      {
+        "t": "imgs",
+        "after": 2,
+        "srcs": [
+          "media/keder-cutting-tool/img-01.jpg"
+        ]
+      }
     ]
   },
   {
     "id": "toolv2",
-    "title": "Tool V2",
+    "title": "Pole Placement Tool",
     "category": "Tools",
     "year": "",
-    "status": "model",
-    "summary": "Fusion 360 design. Description to be added.",
-    "description": [],
+    "status": "In production use",
+    "summary": "A multicolour 3D-printed marker that shows exactly where each tent pole goes and which way its guy ropes run, used during site visits and 3D scans.",
+    "description": [
+      "The pole placement tool is a simple 3D-printed tool I made for the building team and the salespeople at my current company. It is printed in multicolour filament so it is very easy to see.",
+      "## Why it exists",
+      "When a salesperson visits a site to give a quotation, they also make a 3D scan of it, and that scan is the data I use to design the tent for that location. During the visit, they place this tool at each spot where a pole is meant to go, so the scan captures precise coordinates for where the team and the client imagine the poles. I can then put the poles in exactly those spots in the scan data.",
+      "## Showing the ropes",
+      "The tool also shows the direction of the pole and where its ropes will run out. That way the salesperson and the client can see, on site, that a pole facing this way means guidelines going out in these directions, and how far.",
+      "## Part of the pipeline",
+      "It is reusable, and it is one small part of the digital 3D-scanning pipeline for making stretch tents in custom locations."
+    ],
     "tech": [
-      "Fusion 360"
+      "Fusion 360",
+      "3D printing",
+      "Multicolour printing"
     ],
     "type": "model",
     "model": "models/toolv2.glb",
@@ -289,7 +398,6 @@
     "cover": "",
     "images": [],
     "links": [],
-    "draft": true,
     "pose": [
       0.707107,
       0,
@@ -300,7 +408,7 @@
   {
     "id": "qtents-parametric-workflows",
     "title": "Digital Fabrication Pipeline",
-    "category": "Tensile Structures",
+    "category": "Qtents",
     "year": "2023–2025",
     "status": "shipped",
     "summary": "From membrane simulation to cutting pattern, floor plan and cost estimate, fully parametric.",
@@ -355,7 +463,7 @@
   {
     "id": "qtents-scan-to-quote",
     "title": "Qtents 3D Tool: Scan to Cutting Pattern",
-    "category": "Tensile Structures",
+    "category": "Qtents",
     "year": "2023–2025",
     "status": "shipped",
     "summary": "Drop in a 3D scan of a site, draw a tent outline and get a draft cutting pattern with quantities and waste.",
@@ -396,7 +504,7 @@
   {
     "id": "qtents-tensile-frames",
     "title": "Tensile Structure & Metal Frame Design",
-    "category": "Tensile Structures",
+    "category": "Qtents",
     "year": "2023–2025",
     "status": "shipped",
     "summary": "FEA/FEM simulation and design of tensile structures and the metal frames that hold them.",
@@ -476,7 +584,7 @@
   {
     "id": "qtents-production-tools",
     "title": "Tools for the Production Team",
-    "category": "Tensile Structures",
+    "category": "Qtents",
     "year": "2023–2025",
     "status": "shipped",
     "summary": "Custom measuring jigs, templates and strip-cutting devices for the shop floor.",
@@ -523,7 +631,7 @@
   {
     "id": "qtents-3d-scanning",
     "title": "3D Scanning with iPhones",
-    "category": "Tensile Structures",
+    "category": "Qtents",
     "year": "2023–2025",
     "status": "shipped",
     "summary": "iPhone scans instead of expensive laser mapping, giving more detail and letting the company take on more complex projects.",
@@ -1382,10 +1490,8 @@
       "media/phone-2ace/img-01.jpg",
       "media/phone-2ace/img-02.jpg",
       "media/phone-2ace/img-03.jpg",
-      "media/phone-2ace/img-04.jpg",
       "media/phone-2ace/img-05.jpg",
-      "media/phone-2ace/img-06.jpg",
-      "media/phone-2ace/img-07.jpg"
+      "media/phone-2ace/img-06.jpg"
     ],
     "links": [],
     "blocks": [
@@ -1396,10 +1502,8 @@
           "media/phone-2ace/img-01.jpg",
           "media/phone-2ace/img-02.jpg",
           "media/phone-2ace/img-03.jpg",
-          "media/phone-2ace/img-04.jpg",
           "media/phone-2ace/img-05.jpg",
-          "media/phone-2ace/img-06.jpg",
-          "media/phone-2ace/img-07.jpg"
+          "media/phone-2ace/img-06.jpg"
         ]
       }
     ]
@@ -1472,7 +1576,7 @@
   {
     "id": "qtents-metal-components",
     "title": "Metal Components for Mass Production",
-    "category": "Tensile Structures",
+    "category": "Qtents",
     "year": "2023–2025",
     "status": "shipped",
     "summary": "Brackets, connectors and fittings, taken from design to production with manufacturers on three continents.",
@@ -1538,7 +1642,7 @@
   {
     "id": "qtents-internal-tools",
     "title": "Internal Digital Tools",
-    "category": "Tensile Structures",
+    "category": "Qtents",
     "year": "2023–2025",
     "status": "shipped",
     "summary": "Sidewall calculator, DXF translator and other small tools shipped across departments.",
@@ -1577,7 +1681,7 @@
   {
     "id": "qtents-inflatables",
     "title": "Inflatable Tent Generator",
-    "category": "Tensile Structures",
+    "category": "Qtents",
     "year": "2023–2025",
     "status": "shipped",
     "summary": "A modular Grasshopper script that designs an inflatable tent from just three parameters.",
