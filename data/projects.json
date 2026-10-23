@@ -408,10 +408,10 @@
       "OpenNest",
       "Parametric design"
     ],
-    "type": "image",
-    "model": "",
-    "up": "y",
-    "cover": "media/qtents-parametric-workflows/cover-damen.png",
+    "type": "model",
+    "model": "models/damen-site.glb",
+    "up": "z",
+    "cover": "",
     "images": [
       "media/qtents-parametric-workflows/img-01.jpg",
       "media/qtents-parametric-workflows/img-02.jpg",
@@ -459,6 +459,18 @@
         "srcs": [
           "media/qtents-parametric-workflows/img-01.jpg"
         ]
+      }
+    ],
+    "models": [
+      {
+        "model": "models/damen-site.glb",
+        "up": "z",
+        "label": "Tent on site"
+      },
+      {
+        "model": "models/damen-tent.glb",
+        "up": "z",
+        "label": "Tent only"
       }
     ]
   },
