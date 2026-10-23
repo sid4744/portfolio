@@ -1771,15 +1771,16 @@
       "Unrolling",
       "Pattern making"
     ],
-    "type": "image",
-    "model": "",
-    "up": "y",
-    "cover": "media/qtents-inflatables/cover-1792434267364.jpg",
+    "type": "model",
+    "model": "models/qtents-inflatables.glb",
+    "up": "z",
+    "cover": "",
     "images": [
       "media/qtents-inflatables/img-01.jpg",
       "media/qtents-inflatables/img-02.jpg",
       "media/qtents-inflatables/img-03.jpg",
-      "media/qtents-inflatables/img-04.jpg"
+      "media/qtents-inflatables/img-04.jpg",
+      "media/qtents-inflatables/cover-1792434267364.jpg"
     ],
     "links": [],
     "blocks": [
@@ -1796,7 +1797,8 @@
         "after": 1,
         "srcs": [
           "media/qtents-inflatables/img-03.jpg",
-          "media/qtents-inflatables/img-04.jpg"
+          "media/qtents-inflatables/img-04.jpg",
+          "media/qtents-inflatables/cover-1792434267364.jpg"
         ]
       }
     ]
