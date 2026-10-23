@@ -156,16 +156,21 @@ body:not(.booting) #loader { opacity: 0; pointer-events: none; }
 #tip.ink { box-shadow: 4px 4px 0 var(--ink); }
 #loadBar { background: var(--yellow) !important; }
 
-/* About: the portrait fills the page and the text sits on a frosted, blurred panel so it stays easy to read. */
-.sheet.about.has-photo { display: block; }
-.about-photo { position: absolute; inset: 0; overflow: hidden; background: #000; }
-.about-photo img { position: absolute; top: 0; left: 0; width: 64%; height: 100%; object-fit: cover; object-position: 50% 30%; display: block; }   /* the portrait fills the left, the black of its own background continues behind the panel */
-.sheet.about.has-photo .info.wide { position: absolute; top: 0; right: 0; bottom: 0; width: min(640px, 100%); padding: 84px 44px 48px; overflow: auto;
-  background-color: rgba(5, 5, 5, .62); -webkit-backdrop-filter: blur(18px) saturate(1.1); backdrop-filter: blur(18px) saturate(1.1); border-left: 1px solid rgba(244, 244, 241, .18); }
+/* About: the portrait stands on its own (left on wide screens, on top on phones); the text sits on the noisy black page, each block on a
+   blurred, darkened box so the noise never fights the words. */
+.sheet.about.has-photo { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); }
+.about-photo { position: relative; overflow: hidden; background: #000; }
+.about-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 28%; display: block; }
+.sheet.about.has-photo .info.wide { grid-column: auto; padding: 84px 44px 56px; }
+#aboutBody > h2, #aboutBody > p, #aboutBody > .links { position: relative; box-sizing: border-box; max-width: none; width: calc(100% + 40px); padding: 14px 20px; margin: 0 -20px 14px; background-color: rgba(5, 5, 5, .52);
+  -webkit-backdrop-filter: blur(9px); backdrop-filter: blur(9px); }
+#aboutBody > h2 { padding-top: 10px; }
+#aboutBody > .lede { margin-bottom: 14px; }
+#aboutBody > p:not(.lede) { padding-right: clamp(20px, 6vw, 90px); }
 @media (max-width: 760px) {
-  .sheet.about.has-photo .info.wide { background-color: rgba(5, 5, 5, .74); top: auto; width: 100%; height: 64vh; padding: 28px 20px 40px; border-left: 0; border-top: 1px solid rgba(244, 244, 241, .18); }
-  .about-photo { bottom: auto; height: 54vh; }
-  .about-photo img { width: 100%; height: 100%; object-position: 50% 30%; }
+  .sheet.about.has-photo { grid-template-columns: minmax(0, 1fr); grid-template-rows: 40vh 1fr; }
+  .about-photo img { object-position: 50% 24%; }
+  .sheet.about.has-photo .info.wide { padding: 24px 28px 48px; overflow: auto; }
 }
 
 /* ───────── phones and tablets ───────── */
