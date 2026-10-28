@@ -220,7 +220,7 @@ function startSphere() {
       queue.sort((a, b) => b.dir.dot(fwd) - a.dir.dot(fwd));
       const it = queue.shift();
       try {
-        const gltf = await loadModel(it.p.model);
+        const gltf = await loadModel(it.p.hidden && it.p.hidden.length ? it.p.model : it.p.model.replace(/^models\//, 'models/lod/'));      // small copy for the sphere; the project page loads the full one
         const root = prepareModel(gltf.scene, it.p, { size: ITEM_SIZE });
         applyInk(root, it.mat);
         it.holder.remove(it.ph); it.ph.geometry.dispose();
