@@ -189,6 +189,14 @@ function startSphere() {
       holder.lookAt(0, 0, 0);
       ph = card;
     }
+    let pic = null;                       // while a model streams in, its thumbnail floats there instead; the model replaces it once loaded
+    if (p.model && !LITE) {
+      const pmat = new THREE.MeshBasicMaterial({ transparent: true, side: THREE.DoubleSide, alphaMap: vignetteMap(), depthWrite: false, depthTest: false });
+      new THREE.TextureLoader().load(bust(`media/thumbs/${p.id}.png`), (tex) => { tex.colorSpace = THREE.SRGBColorSpace; tex.anisotropy = 4; pmat.map = tex; pmat.needsUpdate = true; });
+      pic = new THREE.Mesh(new THREE.CircleGeometry(ITEM_SIZE / 2, 72), pmat); pic.renderOrder = 5; pic.visible = false;
+      scene.add(pic);
+      ph.visible = false;
+    }
     holder.add(ph);
     const hit = new THREE.Mesh(new THREE.SphereGeometry(ITEM_SIZE * 0.62, 8, 6), new THREE.MeshBasicMaterial({ visible: false }));
     hit.userData.index = i;
@@ -197,7 +205,7 @@ function startSphere() {
     labels.append(tag);
     const glow = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowMap(), transparent: true, depthWrite: false, opacity: 0 }));
     glow.renderOrder = -1; glow.visible = false; scene.add(glow);
-    return { glow, g: 0, p, i, dir, tdir: dir.clone(), sc: 1, tsc: 1, holder, mat, ph, card, hit, tag, spin: Math.random() * 6, phase: Math.random() * 6, hover: 0, dim: 0, targetDim: 0, model: null, ang: dirToAngles(dir), sx: 0, sy: 0 };
+    return { glow, g: 0, p, i, dir, tdir: dir.clone(), sc: 1, tsc: 1, holder, mat, ph, card, pic, fade: 0, hit, tag, spin: Math.random() * 6, phase: Math.random() * 6, hover: 0, dim: 0, targetDim: 0, model: null, ang: dirToAngles(dir), sx: 0, sy: 0 };
   });
   const hitMeshes = items.map((it) => it.hit);
 
@@ -211,7 +219,7 @@ function startSphere() {
   const setProgress = () => {
     $('#loadText').textContent = `LOADING ${String(finished).padStart(2, '0')}/${String(total).padStart(2, '0')}`;
     $('#loadBar').style.width = `${(finished / Math.max(1, total)) * 100}%`;
-    if (finished >= Math.min(total, 8)) document.body.classList.remove('booting');
+    if (finished >= Math.min(total, LITE ? 8 : 1)) document.body.classList.remove('booting');
   };
   const queue = items.filter((it) => it.p.model && !it.card);
   async function pump() {
@@ -220,12 +228,12 @@ function startSphere() {
       queue.sort((a, b) => b.dir.dot(fwd) - a.dir.dot(fwd));
       const it = queue.shift();
       try {
-        const gltf = await loadModel(it.p.hidden && it.p.hidden.length ? it.p.model : it.p.model.replace(/^models\//, 'models/lod/'));      // small copy for the sphere; the project page loads the full one
+        const gltf = await loadModel(it.p.model);
         const root = prepareModel(gltf.scene, it.p, { size: ITEM_SIZE });
         applyInk(root, it.mat);
         it.holder.remove(it.ph); it.ph.geometry.dispose();
         it.holder.add(root);
-        it.model = root; loaded++;
+        it.model = root; loaded++; it.fade = 0.0001;
       } catch (e) { console.warn('model failed', it.p.id, e); }
       finished++; setProgress();
     }
@@ -439,6 +447,14 @@ function startSphere() {
       if (it.dir.distanceToSquared(it.tdir) > 1e-7) { it.dir.lerp(it.tdir, glide).normalize(); it.ang = dirToAngles(it.dir); }
       it.sc += (it.tsc - it.sc) * glide;
       it.holder.visible = it.sc > 0.02;
+      if (it.pic) {                                         // picture -> model: the model grows in as the picture fades out
+        if (it.fade > 0 && it.fade < 1) it.fade = Math.min(1, it.fade + dt / 0.9);
+        const f = it.fade * it.fade * (3 - 2 * it.fade);
+        if (it.model) it.model.scale.setScalar(0.9 + 0.1 * f);
+        it.pic.visible = it.holder.visible && f < 0.999;
+        it.pic.material.opacity = (1 - f) * (1 - it.dim * 0.85);
+        it.pic.position.copy(it.holder.position); it.pic.scale.setScalar(it.sc); it.pic.lookAt(0, 0, 0);
+      }
       it.holder.position.copy(it.dir).multiplyScalar(R).addScaledVector(it.dir, Math.sin(t * 0.6 + it.phase) * 0.18);
       if (it.card) it.holder.lookAt(0, 0, 0);
       // halo behind the selected project
